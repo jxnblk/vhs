@@ -1,0 +1,21 @@
+{
+  "name": "vhs",
+  "version": "0.0.1",
+  "description": "Post-future CSS animations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/vhs.git"
+  },
+  "keywords": [
+    "CSS",
+    "OOCSS",
+    "Basscss",
+    "Rework"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jxnblk/vhs/issues"
+  },
+  "homepage": "https://github.com/jxnblk/vhs"
+}
