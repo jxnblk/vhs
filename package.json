@@ -5,10 +5,11 @@
   "style": "index.css",
   "scripts": {
     "css": "cssnext index.css css/vhs.css",
+    "docs:css": "cssnext docs/index.css docs/base.css",
     "html": "node docs/build",
     "watch:css": "cssnext index.css css/vhs.css --watch",
     "serve": "http-server -p 8000",
-    "start": "npm run watch:css & npm run html & npm run serve"
+    "start": "npm run watch:css & npm run docs:css & npm run html & npm run serve"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "cssstats": "^1.2.1",
     "doctor-mark": "^1.0.0",
     "http-server": "^0.8.0",
+    "humanize-plus": "^1.5.0",
     "mocha": "^2.2.1",
     "postcss": "^4.0.6",
     "watch": "^0.14.0"

@@ -1,0 +1,12 @@
+
+.vhs-highlight-pop {
+  animation-name: vhs-pop, vhs-highlight;
+  animation-duration: var(--pop-duration), var(--highlight-duration);
+  animation-fill-mode: forwards;
+}
+
+.vhs-highlight-pop-text {
+  animation-name: vhs-pop, vhs-highlight-text;
+  animation-duration: var(--pop-duration), var(--highlight-duration);
+}
+

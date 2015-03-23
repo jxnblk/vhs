@@ -2,8 +2,6 @@
     VHS
     Post-future CSS animations
  
-    pulsate (slow repeat)
- 
 */
 
 .vhs-flash {
@@ -88,18 +86,6 @@
           animation-fill-mode: forwards;
 }
 
-/* consider utility-based direction */
-
-/*
-.vhs-fade-out {
-  animation-name: vhs-fade;
-  animation-direction: reverse;
-  animation-duration: var(--fade-duration);
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-*/
-
 @-webkit-keyframes vhs-fade {
     0% { opacity: 0 }
   100% { opacity: 1 }
@@ -108,8 +94,6 @@
 @keyframes vhs-fade {
     0% { opacity: 0 }
   100% { opacity: 1 }
-}
-.vhs-pulsate {
 }
 .vhs-pop {
   -webkit-transform: scale(0);
@@ -171,6 +155,76 @@
   0%   { color: blue; color: #0074d9 }
   100% { color: inherit }
 }
+.vhs-left,
+.vhs-right,
+.vhs-top,
+.vhs-bottom {
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vhs-left   { -webkit-animation-name: vhs-left; animation-name: vhs-left; }
+.vhs-right  { -webkit-animation-name: vhs-right; animation-name: vhs-right; }
+.vhs-top    { -webkit-animation-name: vhs-top; animation-name: vhs-top; }
+.vhs-bottom { -webkit-animation-name: vhs-bottom; animation-name: vhs-bottom; }
+
+@-webkit-keyframes vhs-left {
+   0% { -webkit-transform: translateX(-30vw); transform: translateX(-30vw); opacity: 0; }
+ 100% { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@keyframes vhs-left {
+   0% { -webkit-transform: translateX(-30vw); transform: translateX(-30vw); opacity: 0; }
+ 100% { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@-webkit-keyframes vhs-right {
+   0% { -webkit-transform: translateX(30vw); transform: translateX(30vw); opacity: 0; }
+ 100% { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@keyframes vhs-right {
+   0% { -webkit-transform: translateX(30vw); transform: translateX(30vw); opacity: 0; }
+ 100% { -webkit-transform: translateX(0); transform: translateX(0) }
+}
+
+@-webkit-keyframes vhs-top {
+   0% { -webkit-transform: translateY(-30vh); transform: translateY(-30vh); opacity: 0; }
+ 100% { -webkit-transform: translateY(0); transform: translateY(0) }
+}
+
+@keyframes vhs-top {
+   0% { -webkit-transform: translateY(-30vh); transform: translateY(-30vh); opacity: 0; }
+ 100% { -webkit-transform: translateY(0); transform: translateY(0) }
+}
+
+@-webkit-keyframes vhs-bottom {
+   0% { -webkit-transform: translateY(30vh); transform: translateY(30vh); opacity: 0; }
+ 100% { -webkit-transform: translateY(0); transform: translateY(0) }
+}
+
+@keyframes vhs-bottom {
+   0% { -webkit-transform: translateY(30vh); transform: translateY(30vh); opacity: 0; }
+ 100% { -webkit-transform: translateY(0); transform: translateY(0) }
+}
+
+.vhs-highlight-pop {
+  -webkit-animation-name: vhs-pop, vhs-highlight;
+          animation-name: vhs-pop, vhs-highlight;
+  -webkit-animation-duration: .2s, 2s;
+          animation-duration: .2s, 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vhs-highlight-pop-text {
+  -webkit-animation-name: vhs-pop, vhs-highlight-text;
+          animation-name: vhs-pop, vhs-highlight-text;
+  -webkit-animation-duration: .2s, 2s;
+          animation-duration: .2s, 2s;
+}
 
 .vhs-delay-1 { -webkit-animation-delay: .1s; animation-delay: .1s }
 .vhs-delay-2 { -webkit-animation-delay: .2s; animation-delay: .2s }
@@ -185,7 +239,7 @@
 .vhs-duration-5 { -webkit-animation-duration: 1s; animation-duration: 1s  }
 .vhs-duration-6 { -webkit-animation-duration: 2s; animation-duration: 2s  }
 /* Initial Value */
-.vhs-ease { -webkit-animation-timing-function: ease; animation-timing-function: ease }
+/* .vhs-ease { animation-timing-function: ease } */
 
 .vhs-linear { -webkit-animation-timing-function: linear; animation-timing-function: linear }
 .vhs-ease-in { -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in }

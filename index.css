@@ -10,6 +10,9 @@
 @import './lib/fade';
 @import './lib/pop';
 @import './lib/highlight';
+@import './lib/translate';
+
+@import './lib/highlight-pop';
 
 @import './lib/delay';
 @import './lib/duration';
@@ -54,6 +57,10 @@
   --zoom-duration: var(--duration-2);
   --fade-duration: var(--duration-3);
   --highlight-duration: var(--duration-6);
+
+  --translate-duration: var(--duration-4);
+  --translate-x-distance: 30vw;
+  --translate-y-distance: 30vh;
 
 }
 

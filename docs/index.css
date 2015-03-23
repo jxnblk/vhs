@@ -1,0 +1,27 @@
+
+@import 'basscss-highlight-dark';
+
+.prose table {
+  table-layout: fixed;
+}
+
+.prose th { border-bottom: 2px solid rgba(0,0,0,.125) }
+.prose td { border-bottom: 1px solid rgba(0,0,0,.125) }
+
+.prose th:first-child,
+.prose td:first-child {
+  padding-left: 0;
+}
+.prose th:last-child,
+.prose td:last-child {
+  padding-right: 0;
+}
+
+.dark h1 a,
+.dark h2 a,
+.dark h3 a,
+.dark h4 a,
+.dark h5 a,
+.dark h6 a {
+  color: white;
+}

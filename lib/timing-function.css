@@ -1,6 +1,6 @@
 
 /* Initial Value */
-.vhs-ease { animation-timing-function: ease }
+/* .vhs-ease { animation-timing-function: ease } */
 
 .vhs-linear { animation-timing-function: linear }
 .vhs-ease-in { animation-timing-function: ease-in }

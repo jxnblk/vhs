@@ -1,0 +1,34 @@
+
+.vhs-left,
+.vhs-right,
+.vhs-top,
+.vhs-bottom {
+  animation-duration: var(--translate-duration);
+  animation-fill-mode: forwards;
+}
+
+.vhs-left   { animation-name: vhs-left; }
+.vhs-right  { animation-name: vhs-right; }
+.vhs-top    { animation-name: vhs-top; }
+.vhs-bottom { animation-name: vhs-bottom; }
+
+@keyframes vhs-left {
+   0% { transform: translateX(-var(--translate-x-distance)); opacity: 0; }
+ 100% { transform: translateX(0) }
+}
+
+@keyframes vhs-right {
+   0% { transform: translateX(var(--translate-x-distance)); opacity: 0; }
+ 100% { transform: translateX(0) }
+}
+
+@keyframes vhs-top {
+   0% { transform: translateY(-var(--translate-y-distance)); opacity: 0; }
+ 100% { transform: translateY(0) }
+}
+
+@keyframes vhs-bottom {
+   0% { transform: translateY(var(--translate-y-distance)); opacity: 0; }
+ 100% { transform: translateY(0) }
+}
+

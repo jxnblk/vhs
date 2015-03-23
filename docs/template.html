@@ -13,43 +13,49 @@
     <link rel="stylesheet" href="<%= stylesheet %>">
   <% }) %>
 </head>
-<body>
+<!-- #203039 -->
+<body class="white bg-slate dark">
 
   <div class="container px2 overflow-hidden">
 
-    <header class="mb3 py1 border-bottom">
+    <header class="mb3 py1 border-bottom border-red">
       <div class="flex flex-center flex-wrap mxn2">
-        <div class="flex-auto px2 py1">
+        <div class="bold flex-auto px2 py1 red">
           <%= obj.firstHeading %>
           <%= obj.firstParagraph %>
         </div>
-        <div class="px2">
+        <div class="">
           <% if (obj.homepage) { %>
-            <a href="<%= obj.homepage %>" class="button button-small ml1 mr1 button-link blue">Github</a>
+            <a href="<%= obj.homepage %>" class="button button-small ml2 mr1 button-link red">Github</a>
           <% } %>
           <% if (obj.npm) { %>
-            <a href="http://npmjs.com/package/<%= obj.name %>" class="button button-small ml1 mr1 button-link blue">NPM</a>
+            <a href="http://npmjs.com/package/<%= obj.name %>" class="button button-small ml1 mr2 button-link red">NPM</a>
           <% } %>
         </div>
       </div>
-      <div class="flex flex-center flex-wrap">
-        <div class="bold p1"> <%= stats.size %> bytes </div>
-        <div class="bold p1"> <%= stats.gzipSize %> gzipped </div>
-        <div class="bold p1"> <%= stats.aggregates.selectors %> selectors </div>
-        <div class="bold p1"> <%= stats.aggregates.declarations %> declarations </div>
-        <div class="bold p1"> <%= stats.aggregates.properties.length %> properties </div>
+      <div class="h6 caps flex flex-center flex-wrap red">
+        <div class="flex-auto bold p1"> <%= stats.sizeKB %> </div>
+        <div class="flex-auto bold p1"> <%= stats.gzipSizeKB %> gzipped </div>
+        <div class="flex-auto bold p1"> <%= stats.aggregates.selectors %> selectors </div>
+        <div class="flex-auto bold p1"> <%= stats.aggregates.declarations %> declarations </div>
+        <div class="flex-auto bold p1"> <%= stats.aggregates.properties.length %> properties </div>
+      </div>
+      <div class="fixed right-0 top-0 m2">
+        <button class="button button-small aqua bg-darken-4 js-replay-button">Replay</button>
+        <button class="button button-small aqua bg-darken-4 js-loop-button">Loop</button>
+        <button class="button button-small aqua bg-darken-4 js-pause-button">Pause</button>
       </div>
     </header>
 
     <div class="clearfix mb3 mxn3">
-      <div class="sm-col sm-col-9 px3 py2">
+      <div class="prose sm-col sm-col-9 px3 py2 highlight-dark">
         <%= content %>
       </div>
       <div class="sm-col sm-col-3 px3 py3">
         <ul class="list-reset">
           <% obj.toc.map(function(link) { %>
             <li>
-              <a href="#<%= _.kebabCase(link.content) %>" class="button button-small button-link blue">
+              <a href="#<%= _.kebabCase(link.content) %>" class="button button-small button-link aqua">
                 <%= link.content %>
               </a>
             </li>
