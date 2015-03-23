@@ -1,0 +1,24 @@
+
+.vhs-fade-in {
+  opacity: 0;
+  animation-name: vhs-fade;
+  animation-duration: var(--fade-duration);
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+/* consider utility-based direction */
+
+.vhs-fade-out {
+  animation-name: vhs-fade;
+  animation-direction: reverse;
+  animation-duration: var(--fade-duration);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes vhs-fade {
+    0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+

@@ -1,0 +1,22 @@
+
+.vhs-highlight {
+  animation-name: vhs-highlight;
+  animation-duration: var(--highlight-duration);
+  animation-fill-mode: forwards;
+}
+
+.vhs-highlight-text {
+  animation-name: vhs-higlight-text;
+  animation-duration: var(--highlight-duration);
+}
+
+@keyframes vhs-highlight {
+  0%   { background-color: color(var(--aqua, aqua) alpha(50%)) }
+  100% { background-color: color(var(--aqua, aqua) alpha(0%)) }
+}
+
+@keyframes vhs-highlight-text {
+  0%   { color: var(--blue, blue) }
+  100% { color: inherit }
+}
+

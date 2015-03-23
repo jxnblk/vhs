@@ -2,93 +2,55 @@
  * VHS
  * Post-future CSS animations
  *
- * delay
- * flicker-in
- * (flicker-out)
- * zoom-in
- * fade-in
- * pop-in
- * flicker
+ * pulsate (slow repeat)
+ * highlight (brief, color to not colored transition)
  *
  */
 
-.vhs-delay-1 { animation-delay: .1s }
-.vhs-delay-2 { animation-delay: .2s }
-.vhs-delay-3 { animation-delay: .3s }
-.vhs-delay-4 { animation-delay: .4s }
+@import './lib/flicker';
+@import './lib/zoom';
+@import './lib/fade';
+@import './lib/pop';
+@import './lib/highlight';
 
-@keyframes flicker-in {
-    0%   { opacity: 0; transform: scale(.9) }
-   50%   { opacity: .75 }
-   62.5% { opacity: 0 }
-   75%   { opacity: 1 }
-   87.5% { opacity: .5 }
-  100%   { opacity: 1 }
-}
+@import './lib/delay';
+@import './lib/duration';
+@import './lib/timing-function';
+@import './lib/iteration-count';
+@import './lib/direction';
+@import './lib/fill-mode';
+@import './lib/play-state';
 
-@keyframes flicker-out {
-    0% { opacity: 1 }
-   25% { opacity: .75 }
-   50% { opacity: 0 }
-   75% { opacity: .5 }
-  100% { opacity: 0 }
-}
 
-.vhs-flicker-in {
-  opacity: 0;
-  animation-name: flicker-in;
-  animation-duration: .4s;
-  animation-fill-mode: forwards;
-}
+@import 'colors.css/myth/variables';
 
-@keyframes zoom-in {
-    0% { transform: scale(0) }
-  100% { transform: scale(1) }
-}
+:root {
 
-.vhs-zoom-in {
-  transform: scale(0);
-  animation-name: zoom-in;
-  animation-duration: .2s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
+  --time-1: .1s;
+  --time-2: .2s;
+  --time-3: .3s;
+  --time-4: .4s;
 
-@keyframes fade-in {
-    0% { opacity: 0 }
-  100% { opacity: 1 }
-}
+  --delay-default: 0;
+  --delay-1: var(--time-1);
+  --delay-2: var(--time-2);
+  --delay-3: var(--time-3);
+  --delay-4: var(--time-4);
 
-.vhs-fade-in {
-  opacity: 0;
-  animation-name: fade-in;
-  animation-duration: .3s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
+  --duration-default: var(--time-2);
+  --duration-1: var(--time-1);
+  --duration-2: var(--time-2);
+  --duration-3: var(--time-3);
+  --duration-4: var(--time-4);
 
-@keyframes pop-in {
-    0% { transform: scale(0) }
-   75% { transform: scale(1.25) }
-  100% { transform: scale(1) }
-}
+  --flicker-duration: var(--duration-1);
+  --flicker-in-duration: var(--duration-4);
+  --flicker-out-duration: var(--duration-4);
 
-.vhs-pop-in {
-  transform: scale(0);
-  animation-name: pop-in;
-  animation-duration: .2s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
+  --pop-duration: var(--duration-2);
+  --zoom-duration: var(--duration-2);
+  --fade-duration: var(--duration-3);
+  --highlight-duration: var(--duration-4);
 
-@keyframes flicker {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
-}
-
-.vhs-flicker {
-  animation-name: flicker;
-  animation-duration: .025s;
-  animation-iteration-count: infinite;
 }
 

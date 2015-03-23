@@ -9,13 +9,20 @@
   "keywords": [
     "CSS",
     "OOCSS",
-    "Basscss",
-    "Rework"
+    "Basscss"
   ],
   "author": "Brent Jackson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jxnblk/vhs/issues"
   },
-  "homepage": "https://github.com/jxnblk/vhs"
+  "homepage": "https://github.com/jxnblk/vhs",
+  "devDependencies": {
+    "doctor-mark": "^1.0.0",
+    "mocha": "^2.2.1",
+    "postcss": "^4.0.6"
+  },
+  "dependencies": {
+    "colors.css": "^2.3.0"
+  }
 }

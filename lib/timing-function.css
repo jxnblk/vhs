@@ -1,0 +1,13 @@
+
+/* Initial Value */
+.vhs-ease { animation-timing-function: ease }
+
+.vhs-linear { animation-timing-function: linear }
+.vhs-ease-in { animation-timing-function: ease-in }
+.vhs-ease-out { animation-timing-function: ease-out }
+.vhs-ease-in-out { animation-timing-function: ease-in-out }
+
+/* Reference */
+/* cubic-bezier(0.1, 0.7, 1.0, 0.1) */
+/* Steps */
+
