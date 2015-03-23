@@ -1,17 +1,9 @@
 
-.vhs-zoom-in {
+.vhs-zoom {
   transform: scale(0);
   animation-name: vhs-zoom;
   animation-duration: var(--zoom-duration);
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
-
-.vhs-zoom-out {
-  animation-name: vhs-zoom;
-  animation-direction: reverse;
-  animation-duration: var(--zoom-duration);
-  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 

@@ -1,5 +1,5 @@
 
-.vhs-fade-in {
+.vhs-fade {
   opacity: 0;
   animation-name: vhs-fade;
   animation-duration: var(--fade-duration);
@@ -9,6 +9,7 @@
 
 /* consider utility-based direction */
 
+/*
 .vhs-fade-out {
   animation-name: vhs-fade;
   animation-direction: reverse;
@@ -16,6 +17,7 @@
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+*/
 
 @keyframes vhs-fade {
     0% { opacity: 0 }

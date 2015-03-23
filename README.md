@@ -5,79 +5,79 @@ Post-future CSS animations
 ## Flicker
 
 ```html
-<div class="flex flex-center p2">
+<div class="center p2">
   <div class="h2 bold vhs-flicker">.vhs-flicker</div>
 </div>
 ```
 
-## Flicker In
+## Flicker Reverse
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-flicker-in">.vhs-flicker-in</div>
+<div class="center p2">
+  <div class="h2 bold vhs-flicker vhs-reverse">.vhs-flicker.vhs-reverse</div>
 </div>
 ```
 
-## Flicker Out
+## Zoom
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-flicker-out">.vhs-flicker-out</div>
+<div class="center p2">
+  <div class="h2 bold vhs-zoom">.vhs-zoom</div>
 </div>
 ```
 
-## Zoom In
+## Zoom Reverse
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-zoom-in">.vhs-zoom-in</div>
+<div class="center p2">
+  <div class="h2 bold vhs-zoom vhs-reverse">.vhs-zoom vhs-reverse</div>
 </div>
 ```
 
-## Zoom Out
+## Fade
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-zoom-out">.vhs-zoom-out</div>
+<div class="center p2">
+  <div class="h2 bold vhs-fade">.vhs-fade</div>
 </div>
 ```
 
-## Fade In
+## Fade Reverse
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-fade-in">.vhs-fade-in</div>
+<div class="center p2">
+  <div class="h2 bold vhs-fade vhs-reverse">.vhs-fade.vhs-reverse</div>
 </div>
 ```
 
-## Fade Out
+### Pulsate Effect
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-fade-out">.vhs-fade-out</div>
+<div class="center p2">
+  <div class="h2 bold vhs-fade vhs-duration-6 vhs-infinite vhs-alternate">.vhs-fade.vhs-duration-6.vhs-infinite.vhs-alternate</div>
 </div>
 ```
 
-## Pop In
+## Pop
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-pop-in">.vhs-pop-in</div>
+<div class="center p2">
+  <div class="h2 bold vhs-pop">.vhs-pop</div>
 </div>
 ```
 
-## Pop Out
+## Pop Reverse
 
 ```html
-<div class="flex flex-center p2">
-  <div class="h2 bold vhs-pop-out">.vhs-pop-out</div>
+<div class="center p2">
+  <div class="h2 bold vhs-pop vhs-reverse">.vhs-pop.vhs-reverse</div>
 </div>
 ```
 
 ## Highlight
 
 ```html
-<div class="flex flex-center p2">
+<div class="center p2">
   <div class="h2 bold vhs-highlight">.vhs-highlight</div>
 </div>
 ```
@@ -85,8 +85,26 @@ Post-future CSS animations
 ## Highlight Text
 
 ```html
-<div class="flex flex-center p2">
+<div class="center p2">
   <div class="h2 bold vhs-highlight-text">.vhs-highlight-text</div>
+</div>
+```
+
+## Flash
+
+```html
+<div class="center p2">
+  <div class="h2 bold vhs-flash">.vhs-flash</div>
+</div>
+```
+
+```html
+<div class="center p2">
+  <div class="h2 bold vhs-flash vhs-duration-2">.vhs-flash</div>
+  <div class="h2 bold vhs-flash vhs-duration-3">.vhs-flash</div>
+  <div class="h2 bold vhs-flash vhs-duration-4">.vhs-flash</div>
+  <div class="h2 bold vhs-flash vhs-duration-5">.vhs-flash</div>
+  <div class="h2 bold vhs-flash vhs-duration-6">.vhs-flash</div>
 </div>
 ```
 

@@ -1,0 +1,13 @@
+
+.vhs-flash {
+  animation-name: vhs-flash;
+  animation-duration: var(--flash-duration) ; /* previously .025s; */
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1);
+}
+
+@keyframes vhs-flash {
+   0% { opacity: 0 }
+  50% { opacity: 1 }
+}
+

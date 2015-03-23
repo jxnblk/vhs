@@ -1,58 +1,17 @@
 
 .vhs-flicker {
-  animation-name: vhs-fade;
-  animation-duration: var(--flicker-duration) ;/* .025s; */
-  animation-iteration-count: infinite;
-}
-
-.vhs-flicker-in {
   opacity: 0;
   animation-name: vhs-flicker;
-  animation-duration: var(--flicker-in-duration);
-  animation-fill-mode: forwards;
-}
-
-.vhs-flicker-out {
-  animation-name: vhs-flicker;
-  animation-direction: reverse;
-  animation-duration: var(--flicker-out-duration);
+  animation-duration: var(--flicker-duration);
   animation-fill-mode: forwards;
 }
 
 @keyframes vhs-flicker {
-    0%   { opacity: 0; transform: scale(.9) }
-   25%   { opacity: .75 }
-   50%   { opacity: 0 }
-   75%   { opacity: 1 }
-   87.5% { opacity: .5 }
-  100%   { opacity: 1 }
+    0% { opacity: 0 }
+   20% { opacity: .75 }
+   40% { opacity: 0 }
+   60% { opacity: 1 }
+   80% { opacity: .5 }
+  100% { opacity: 1 }
 }
 
-/*
-@keyframes flicker-in {
-    0%   { opacity: 0; transform: scale(.9) }
-   50%   { opacity: .75 }
-   62.5% { opacity: 0 }
-   75%   { opacity: 1 }
-   87.5% { opacity: .5 }
-  100%   { opacity: 1 }
-}
-*/
-
-/* use vhs-fade
-@keyframes vhs-flicker {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
-}
-*/
-
-
-/*
-@keyframes flicker-out {
-    0% { opacity: 1 }
-   25% { opacity: .75 }
-   50% { opacity: 0 }
-   75% { opacity: .5 }
-  100% { opacity: 0 }
-}
-*/

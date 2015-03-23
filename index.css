@@ -1,12 +1,10 @@
 /*
- * VHS
- * Post-future CSS animations
- *
- * pulsate (slow repeat)
- * highlight (brief, color to not colored transition)
- *
- */
+    VHS
+    Post-future CSS animations
+ 
+*/
 
+@import './lib/flash';
 @import './lib/flicker';
 @import './lib/zoom';
 @import './lib/fade';
@@ -49,10 +47,9 @@
   --duration-5: var(--time-5);
   --duration-6: var(--time-6);
 
-  --flicker-duration: var(--duration-1);
-  --flicker-in-duration: var(--duration-4);
-  --flicker-out-duration: var(--duration-4);
+  --flicker-duration: var(--duration-4);
 
+  --flash-duration: var(--duration-1);
   --pop-duration: var(--duration-2);
   --zoom-duration: var(--duration-2);
   --fade-duration: var(--duration-3);

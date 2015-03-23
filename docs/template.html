@@ -31,6 +31,14 @@
             <a href="http://npmjs.com/package/<%= obj.name %>" class="button button-small ml1 mr1 button-link blue">NPM</a>
           <% } %>
         </div>
+      </div>
+      <div class="flex flex-center flex-wrap">
+        <div class="bold p1"> <%= stats.size %> bytes </div>
+        <div class="bold p1"> <%= stats.gzipSize %> gzipped </div>
+        <div class="bold p1"> <%= stats.aggregates.selectors %> selectors </div>
+        <div class="bold p1"> <%= stats.aggregates.declarations %> declarations </div>
+        <div class="bold p1"> <%= stats.aggregates.properties.length %> properties </div>
+      </div>
     </header>
 
     <div class="clearfix mb3 mxn3">

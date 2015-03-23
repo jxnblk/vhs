@@ -1,17 +1,9 @@
 
-.vhs-pop-in {
+.vhs-pop {
   transform: scale(0);
   animation-name: vhs-pop;
   animation-duration: var(--pop-duration);
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
-
-.vhs-pop-out {
-  animation-name: vhs-pop;
-  animation-duration: var(--pop-duration);
-  animation-direction: reverse;
-  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
