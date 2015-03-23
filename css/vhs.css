@@ -1,0 +1,281 @@
+/*
+ * VHS
+ * Post-future CSS animations
+ *
+ * pulsate (slow repeat)
+ * highlight (brief, color to not colored transition)
+ *
+ */
+
+.vhs-flicker {
+  -webkit-animation-name: vhs-fade;
+          animation-name: vhs-fade;
+  -webkit-animation-duration: .1s ;
+          animation-duration: .1s ;/* .025s; */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.vhs-flicker-in {
+  opacity: 0;
+  -webkit-animation-name: vhs-flicker;
+          animation-name: vhs-flicker;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vhs-flicker-out {
+  -webkit-animation-name: vhs-flicker;
+          animation-name: vhs-flicker;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vhs-flicker {
+    0%   { opacity: 0; -webkit-transform: scale(.9); transform: scale(.9) }
+   25%   { opacity: .75 }
+   50%   { opacity: 0 }
+   75%   { opacity: 1 }
+   87.5% { opacity: .5 }
+  100%   { opacity: 1 }
+}
+
+@keyframes vhs-flicker {
+    0%   { opacity: 0; -webkit-transform: scale(.9); transform: scale(.9) }
+   25%   { opacity: .75 }
+   50%   { opacity: 0 }
+   75%   { opacity: 1 }
+   87.5% { opacity: .5 }
+  100%   { opacity: 1 }
+}
+
+/*
+@keyframes flicker-in {
+    0%   { opacity: 0; transform: scale(.9) }
+   50%   { opacity: .75 }
+   62.5% { opacity: 0 }
+   75%   { opacity: 1 }
+   87.5% { opacity: .5 }
+  100%   { opacity: 1 }
+}
+*/
+
+/* use vhs-fade
+@keyframes vhs-flicker {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}
+*/
+
+
+/*
+@keyframes flicker-out {
+    0% { opacity: 1 }
+   25% { opacity: .75 }
+   50% { opacity: 0 }
+   75% { opacity: .5 }
+  100% { opacity: 0 }
+}
+*/
+.vhs-zoom-in {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-name: vhs-zoom;
+          animation-name: vhs-zoom;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vhs-zoom-out {
+  -webkit-animation-name: vhs-zoom;
+          animation-name: vhs-zoom;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vhs-zoom {
+    0% { -webkit-transform: scale(0); transform: scale(0) }
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+
+@keyframes vhs-zoom {
+    0% { -webkit-transform: scale(0); transform: scale(0) }
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+.vhs-fade-in {
+  opacity: 0;
+  -webkit-animation-name: vhs-fade;
+          animation-name: vhs-fade;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* consider utility-based direction */
+
+.vhs-fade-out {
+  -webkit-animation-name: vhs-fade;
+          animation-name: vhs-fade;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vhs-fade {
+    0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes vhs-fade {
+    0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+.vhs-pop-in {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-name: vhs-pop;
+          animation-name: vhs-pop;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vhs-pop-out {
+  -webkit-animation-name: vhs-pop;
+          animation-name: vhs-pop;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vhs-pop {
+    0% { -webkit-transform: scale(0); transform: scale(0) }
+   75% { -webkit-transform: scale(1.25); transform: scale(1.25) }
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+
+@keyframes vhs-pop {
+    0% { -webkit-transform: scale(0); transform: scale(0) }
+   75% { -webkit-transform: scale(1.25); transform: scale(1.25) }
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+.vhs-highlight {
+  -webkit-animation-name: vhs-highlight;
+          animation-name: vhs-highlight;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vhs-highlight-text {
+  -webkit-animation-name: vhs-higlight-text;
+          animation-name: vhs-higlight-text;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+}
+
+@-webkit-keyframes vhs-highlight {
+  0%   { background-color: rgba(0, 255, 255, 0.5); background-color: rgba(127, 219, 255, 0.5) }
+  100% { background-color: rgba(0, 255, 255, 0); background-color: rgba(127, 219, 255, 0) }
+}
+
+@keyframes vhs-highlight {
+  0%   { background-color: rgba(0, 255, 255, 0.5); background-color: rgba(127, 219, 255, 0.5) }
+  100% { background-color: rgba(0, 255, 255, 0); background-color: rgba(127, 219, 255, 0) }
+}
+
+@-webkit-keyframes vhs-highlight-text {
+  0%   { color: blue; color: #0074d9 }
+  100% { color: inherit }
+}
+
+@keyframes vhs-highlight-text {
+  0%   { color: blue; color: #0074d9 }
+  100% { color: inherit }
+}
+
+.vhs-delay-1 { -webkit-animation-delay: .1s; animation-delay: .1s }
+.vhs-delay-2 { -webkit-animation-delay: .2s; animation-delay: .2s }
+.vhs-delay-3 { -webkit-animation-delay: .3s; animation-delay: .3s }
+.vhs-delay-4 { -webkit-animation-delay: .4s; animation-delay: .4s }
+.vhs-duration-1 { -webkit-animation-duration: .1s; animation-duration: .1s  }
+.vhs-duration-2 { -webkit-animation-duration: .2s; animation-duration: .2s  }
+.vhs-duration-3 { -webkit-animation-duration: .3s; animation-duration: .3s  }
+.vhs-duration-4 { -webkit-animation-duration: .4s; animation-duration: .4s  }
+/* Initial Value */
+.vhs-ease { -webkit-animation-timing-function: ease; animation-timing-function: ease }
+
+.vhs-linear { -webkit-animation-timing-function: linear; animation-timing-function: linear }
+.vhs-ease-in { -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in }
+.vhs-ease-out { -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out }
+.vhs-ease-in-out { -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out }
+
+/* Reference */
+/* cubic-bezier(0.1, 0.7, 1.0, 0.1) */
+/* Steps */
+.vhs-infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite }
+.vhs-reverse { -webkit-animation-direction: reverse; animation-direction: reverse }
+.vhs-alternate { -webkit-animation-direction: alternate; animation-direction: alternate }
+.vhs-fill-forwards { -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards }
+.vhs-fill-backwards { -webkit-animation-fill-mode: backwards; animation-fill-mode: backwards }
+.vhs-fill-both { -webkit-animation-fill-mode: both; animation-fill-mode: both }
+.vhs-paused { -webkit-animation-play-state: paused; animation-play-state: paused }
+
+
+/*
+
+   COLOR VARIABLES
+
+   - Cool
+   - Warm
+   - Gray Scale
+
+*/
+
+:root {
+
+  /* Cool */
+
+
+  /* Warm */
+
+
+  /* Gray scale */
+
+}
+

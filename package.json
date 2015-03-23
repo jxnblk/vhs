@@ -2,6 +2,11 @@
   "name": "vhs",
   "version": "0.0.1",
   "description": "Post-future CSS animations",
+  "style": "index.css",
+  "scripts": {
+    "css": "cssnext index.css css/vhs.css",
+    "html": "node docs/build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jxnblk/vhs.git"
@@ -18,6 +23,8 @@
   },
   "homepage": "https://github.com/jxnblk/vhs",
   "devDependencies": {
+    "cssnext": "^1.1.0",
+    "cssstats": "^1.2.1",
     "doctor-mark": "^1.0.0",
     "mocha": "^2.2.1",
     "postcss": "^4.0.6"

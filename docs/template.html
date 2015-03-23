@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title><%= obj.title %></title>
+  <meta name="author" content="<%= obj.author %>">
+  <meta name="description" content="<%= obj.description %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <% if (obj.keywords.length) { %>
+  <meta name="keywords" content="<%= obj.keywords.join() %>">
+  <% } %>
+  <% obj.stylesheets.map(function(stylesheet) { %>
+    <link rel="stylesheet" href="<%= stylesheet %>">
+  <% }) %>
+</head>
+<body>
+
+  <div class="container px2 overflow-hidden">
+
+    <header class="mb3 py1 border-bottom">
+      <div class="flex flex-center flex-wrap mxn2">
+        <div class="flex-auto px2 py1">
+          <%= obj.firstHeading %>
+          <%= obj.firstParagraph %>
+        </div>
+        <div class="px2">
+          <% if (obj.homepage) { %>
+            <a href="<%= obj.homepage %>" class="button button-small ml1 mr1 button-link blue">Github</a>
+          <% } %>
+          <% if (obj.npm) { %>
+            <a href="http://npmjs.com/package/<%= obj.name %>" class="button button-small ml1 mr1 button-link blue">NPM</a>
+          <% } %>
+        </div>
+    </header>
+
+    <div class="clearfix mb3 mxn3">
+      <div class="sm-col sm-col-9 px3 py2">
+        <%= content %>
+      </div>
+      <div class="sm-col sm-col-3 px3 py3">
+        <ul class="list-reset">
+          <% obj.toc.map(function(link) { %>
+            <li>
+              <a href="#<%= _.kebabCase(link.content) %>" class="button button-small button-link blue">
+                <%= link.content %>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="py2 border-top">
+      <div class="flex flex-baseline mxn1">
+        <a href="<%= obj.base_url %>" class="button button-small button-link ml1 mr1">
+          <%= obj.name %>
+        </a>
+        <div class="h5 bold px1">v<%= obj.version %></div>
+        <div class="flex-auto"></div>
+        <a href="<%= obj.homepage %>" class="button button-small button-link ml1 mr1">Github</a>
+        <% if (npm) { %>
+          <a href="http://npmjs.com/package/<%= obj.name %>" class="button button-small button-link ml1 mr1">NPM</a>
+        <% } %>
+      </div>
+    </footer>
+
+  </div>
+
+  <% obj.javascripts.map(function(script) { %>
+    <script src="<%= script %>"></script>
+  <% }) %>
+</body>
+</html>
