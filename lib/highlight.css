@@ -6,7 +6,7 @@
 }
 
 .vhs-highlight-text {
-  animation-name: vhs-higlight-text;
+  animation-name: vhs-highlight-text;
   animation-duration: var(--highlight-duration);
 }
 
