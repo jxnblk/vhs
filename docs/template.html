@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="<%= stylesheet %>">
   <% }) %>
 </head>
-<!-- #203039 -->
-<body class="white bg-slate dark">
+<body class="white bg-slate dark" style="background-color:#102630;">
 
   <div class="container px2 overflow-hidden">
 
@@ -33,24 +32,24 @@
           <% } %>
         </div>
       </div>
-      <div class="h6 caps center flex flex-center flex-wrap mt2 red vhs-fade vhs-delay-4">
-        <div class="flex-auto bold p1"> <%= stats.sizeKB %> </div>
-        <div class="flex-auto bold p1"> <%= stats.gzipSizeKB %> gzipped </div>
-        <div class="flex-auto bold p1"> <%= stats.aggregates.selectors %> selectors </div>
-        <div class="flex-auto bold p1"> <%= stats.aggregates.declarations %> declarations </div>
-        <div class="flex-auto bold p1"> <%= stats.aggregates.properties.length %> properties </div>
+      <div class="h6 caps center flex flex-center flex-wrap mt2 red vhs-fade vhs-delay-2">
+        <div class="flex-auto bold p1 vhs-top vhs-delay-2"> <%= stats.sizeKB %> </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-3"> <%= stats.gzipSizeKB %> gzipped </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> <%= stats.aggregates.selectors %> selectors </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> <%= stats.aggregates.declarations %> declarations </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> <%= stats.aggregates.properties.length %> properties </div>
       </div>
-      <div class="fixed z1 right-0 top-0 m2">
+      <div class="fixed z1 right-0 top-0 m2 vhs-top">
         <button class="button button-small red bg-darken-4 js-replay-button">Replay</button>
         <button class="button button-small red bg-darken-4 js-loop-button">Loop</button>
         <button class="button button-small red bg-darken-4 js-pause-button">Pause</button>
       </div>
     </header>
 
-    <hr class="mt0 border-red muted"/>
+    <hr class="mt0 border-red muted vhs-bottom vhs-delay-3 vhs-duration-3"/>
 
     <div class="clearfix mb3 mxn3">
-      <div class="prose sm-col sm-col-9 px3 py2 highlight-dark">
+      <div class="prose sm-col sm-col-9 px3 py2 highlight-dark vhs-bottom vhs-delay-1 vhs-duration-3">
         <%= content %>
 
       </div>
