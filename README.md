@@ -2,6 +2,14 @@
 
 Post-future CSS animations
 
+
+```bash
+npm install vhs
+```
+
+
+# Demos
+
 ## Flicker
 
 ```html
@@ -13,114 +21,114 @@ Post-future CSS animations
 ## Flicker Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-flicker vhs-reverse js-demo">.vhs-flicker.vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-flicker vhs-reverse js-demo">.vhs-flicker.vhs-reverse</div>
 </div>
 ```
 
 ## Zoom
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-zoom js-demo">.vhs-zoom</div>
+<div class="h2 bold center p2">
+  <div class="vhs-zoom js-demo">.vhs-zoom</div>
 </div>
 ```
 
 ## Zoom Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-zoom vhs-reverse js-demo">.vhs-zoom .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-zoom vhs-reverse js-demo">.vhs-zoom .vhs-reverse</div>
 </div>
 ```
 
 ## Fade
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-fade js-demo">.vhs-fade</div>
+<div class="h2 bold center p2">
+  <div class="vhs-fade js-demo">.vhs-fade</div>
 </div>
 ```
 
 ## Fade Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-fade vhs-reverse js-demo">.vhs-fade .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-fade vhs-reverse js-demo">.vhs-fade .vhs-reverse</div>
 </div>
 ```
 
 ### Pulsate Effect
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo">.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate</div>
+<div class="h2 bold center p2">
+  <div class="vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo">.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate</div>
 </div>
 ```
 
 ## Pop
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-pop js-demo">.vhs-pop</div>
+<div class="h2 bold center p2">
+  <div class="vhs-pop js-demo">.vhs-pop</div>
 </div>
 ```
 
 ## Pop Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-pop vhs-reverse js-demo">.vhs-pop .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-pop vhs-reverse js-demo">.vhs-pop .vhs-reverse</div>
 </div>
 ```
 
 ## Highlight
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-highlight js-demo">.vhs-highlight</div>
+<div class="h2 bold center p2">
+  <div class="vhs-highlight js-demo">.vhs-highlight</div>
 </div>
 ```
 
 ## Highlight Text
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-highlight-text js-demo">.vhs-highlight-text</div>
+<div class="h2 bold center p2">
+  <div class="vhs-highlight-text js-demo">.vhs-highlight-text</div>
 </div>
 ```
 
 ## Flash
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-flash js-demo">.vhs-flash</div>
+<div class="h2 bold center p2">
+  <div class="vhs-flash js-demo">.vhs-flash</div>
 </div>
 ```
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-flash vhs-duration-2 js-demo">.vhs-flash .vhs-duration-2</div>
-  <div class="h2 bold vhs-flash vhs-duration-3 js-demo">.vhs-flash .vhs-duration-3</div>
-  <div class="h2 bold vhs-flash vhs-duration-4 js-demo">.vhs-flash .vhs-duration-4</div>
-  <div class="h2 bold vhs-flash vhs-duration-5 js-demo">.vhs-flash .vhs-duration-5</div>
-  <div class="h2 bold vhs-flash vhs-duration-6 js-demo">.vhs-flash vhs-duration-6</div>
+<div class="h2 bold center p2">
+  <div class="vhs-flash vhs-duration-2 js-demo">.vhs-flash .vhs-duration-2</div>
+  <div class="vhs-flash vhs-duration-3 js-demo">.vhs-flash .vhs-duration-3</div>
+  <div class="vhs-flash vhs-duration-4 js-demo">.vhs-flash .vhs-duration-4</div>
+  <div class="vhs-flash vhs-duration-5 js-demo">.vhs-flash .vhs-duration-5</div>
+  <div class="vhs-flash vhs-duration-6 js-demo">.vhs-flash vhs-duration-6</div>
 </div>
 ```
 
 ## Left
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-left js-demo">.vhs-left</div>
+<div class="h2 bold center p2">
+  <div class="vhs-left js-demo">.vhs-left</div>
 </div>
 ```
 
 ## Left Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-left vhs-reverse js-demo">.vhs-left .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-left vhs-reverse js-demo">.vhs-left .vhs-reverse</div>
 </div>
 ```
 
@@ -128,16 +136,16 @@ Post-future CSS animations
 ## Right
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-right js-demo">.vhs-right</div>
+<div class="h2 bold center p2">
+  <div class="vhs-right js-demo">.vhs-right</div>
 </div>
 ```
 
 ## Right Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-right vhs-reverse js-demo">.vhs-right .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-right vhs-reverse js-demo">.vhs-right .vhs-reverse</div>
 </div>
 ```
 
@@ -145,16 +153,16 @@ Post-future CSS animations
 ## Top
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-top js-demo">.vhs-top</div>
+<div class="h2 bold center p2">
+  <div class="vhs-top js-demo">.vhs-top</div>
 </div>
 ```
 
 ## Top Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-top vhs-reverse js-demo">.vhs-top .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-top vhs-reverse js-demo">.vhs-top .vhs-reverse</div>
 </div>
 ```
 
@@ -162,16 +170,16 @@ Post-future CSS animations
 ## Bottom
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-bottom js-demo">.vhs-bottom</div>
+<div class="h2 bold center p2">
+  <div class="vhs-bottom js-demo">.vhs-bottom</div>
 </div>
 ```
 
 ## Bottom Reverse
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-bottom vhs-reverse js-demo">.vhs-bottom .vhs-reverse</div>
+<div class="h2 bold center p2">
+  <div class="vhs-bottom vhs-reverse js-demo">.vhs-bottom .vhs-reverse</div>
 </div>
 ```
 
@@ -181,8 +189,8 @@ Post-future CSS animations
 ## Highlight Pop
 
 ```html
-<div class="center p2">
-  <div class="h2 bold vhs-highlight-pop js-demo">.vhs-highlight-pop</div>
+<div class="h2 bold center p2">
+  <div class="vhs-highlight-pop js-demo">.vhs-highlight-pop</div>
 </div>
 ```
 

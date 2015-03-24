@@ -4,6 +4,7 @@
   animation-duration: var(--flash-duration) ; /* previously .025s; */
   animation-iteration-count: infinite;
   animation-timing-function: steps(1);
+  opacity: 0;
 }
 
 @keyframes vhs-flash {

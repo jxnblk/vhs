@@ -3,7 +3,6 @@
   transform: scale(0);
   animation-name: vhs-zoom;
   animation-duration: var(--zoom-duration);
-  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 

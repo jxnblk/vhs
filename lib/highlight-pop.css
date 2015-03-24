@@ -1,5 +1,6 @@
 
 .vhs-highlight-pop {
+  transform: scale(0);
   animation-name: vhs-pop, vhs-highlight;
   animation-duration: var(--pop-duration), var(--highlight-duration);
   animation-fill-mode: forwards;

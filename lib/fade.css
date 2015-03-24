@@ -3,7 +3,6 @@
   opacity: 0;
   animation-name: vhs-fade;
   animation-duration: var(--fade-duration);
-  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 

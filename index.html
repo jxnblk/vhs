@@ -22,15 +22,15 @@
 
   <div class="container px2 overflow-hidden">
 
-    <header class="mb3 py1 border-bottom border-red">
+    <header class="py1 xborder-bottom border-red">
       <div class="flex flex-center flex-wrap mxn2">
-        <div class="bold flex-auto px2 py1 red">
+        <div class="h3 bold caps flex-auto px2 py1 red vhs-flicker">
           <h1 id="vhs">VHS</h1>
 
           <p>Post-future CSS animations</p>
 
         </div>
-        <div class="">
+        <div class="vhs-right vhs-delay-3">
           
             <a href="https://github.com/jxnblk/vhs" class="button button-small ml2 mr1 button-link red">Github</a>
           
@@ -39,23 +39,25 @@
           
         </div>
       </div>
-      <div class="h6 caps flex flex-center flex-wrap red">
-        <div class="flex-auto bold p1"> 9 KB </div>
+      <div class="h6 caps center flex flex-center flex-wrap mt2 red vhs-fade vhs-delay-4">
+        <div class="flex-auto bold p1"> 10 KB </div>
         <div class="flex-auto bold p1"> 1 KB gzipped </div>
-        <div class="flex-auto bold p1"> 103 selectors </div>
-        <div class="flex-auto bold p1"> 230 declarations </div>
+        <div class="flex-auto bold p1"> 101 selectors </div>
+        <div class="flex-auto bold p1"> 245 declarations </div>
         <div class="flex-auto bold p1"> 22 properties </div>
       </div>
-      <div class="fixed right-0 top-0 m2">
-        <button class="button button-small aqua bg-darken-4 js-replay-button">Replay</button>
-        <button class="button button-small aqua bg-darken-4 js-loop-button">Loop</button>
-        <button class="button button-small aqua bg-darken-4 js-pause-button">Pause</button>
+      <div class="fixed z1 right-0 top-0 m2">
+        <button class="button button-small red bg-darken-4 js-replay-button">Replay</button>
+        <button class="button button-small red bg-darken-4 js-loop-button">Loop</button>
+        <button class="button button-small red bg-darken-4 js-pause-button">Pause</button>
       </div>
     </header>
 
+    <hr class="mt0 border-red muted"/>
+
     <div class="clearfix mb3 mxn3">
       <div class="prose sm-col sm-col-9 px3 py2 highlight-dark">
-        <h2 id="flicker"><a href="#flicker">Flicker</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
+        <pre>npm install vhs</pre><h1 id="demos"><a href="#demos">Demos</a></h1><h2 id="flicker"><a href="#flicker">Flicker</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="center p2">
   <div class="h2 bold vhs-flicker js-demo">.vhs-flicker</div>
@@ -67,231 +69,221 @@
 </div>
 <h2 id="flicker-reverse"><a href="#flicker-reverse">Flicker Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-flicker vhs-reverse js-demo">.vhs-flicker.vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-flicker vhs-reverse js-demo">.vhs-flicker.vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flicker vhs-reverse js-demo"</span>&gt;</span>.vhs-flicker.vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flicker vhs-reverse js-demo"</span>&gt;</span>.vhs-flicker.vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="zoom"><a href="#zoom">Zoom</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-zoom js-demo">.vhs-zoom</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-zoom js-demo">.vhs-zoom</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-zoom js-demo"</span>&gt;</span>.vhs-zoom<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-zoom js-demo"</span>&gt;</span>.vhs-zoom<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="zoom-reverse"><a href="#zoom-reverse">Zoom Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-zoom vhs-reverse js-demo">.vhs-zoom .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-zoom vhs-reverse js-demo">.vhs-zoom .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-zoom vhs-reverse js-demo"</span>&gt;</span>.vhs-zoom .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-zoom vhs-reverse js-demo"</span>&gt;</span>.vhs-zoom .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="fade"><a href="#fade">Fade</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-fade js-demo">.vhs-fade</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-fade js-demo">.vhs-fade</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-fade js-demo"</span>&gt;</span>.vhs-fade<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-fade js-demo"</span>&gt;</span>.vhs-fade<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="fade-reverse"><a href="#fade-reverse">Fade Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-fade vhs-reverse js-demo">.vhs-fade .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-fade vhs-reverse js-demo">.vhs-fade .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-fade vhs-reverse js-demo"</span>&gt;</span>.vhs-fade .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-fade vhs-reverse js-demo"</span>&gt;</span>.vhs-fade .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h3 id="pulsate-effect"><a href="#pulsate-effect">Pulsate Effect</a></h3><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo">.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo">.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo"</span>&gt;</span>.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo"</span>&gt;</span>.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="pop"><a href="#pop">Pop</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-pop js-demo">.vhs-pop</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-pop js-demo">.vhs-pop</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-pop js-demo"</span>&gt;</span>.vhs-pop<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-pop js-demo"</span>&gt;</span>.vhs-pop<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="pop-reverse"><a href="#pop-reverse">Pop Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-pop vhs-reverse js-demo">.vhs-pop .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-pop vhs-reverse js-demo">.vhs-pop .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-pop vhs-reverse js-demo"</span>&gt;</span>.vhs-pop .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-pop vhs-reverse js-demo"</span>&gt;</span>.vhs-pop .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="highlight"><a href="#highlight">Highlight</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-highlight js-demo">.vhs-highlight</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-highlight js-demo">.vhs-highlight</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-highlight js-demo"</span>&gt;</span>.vhs-highlight<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-highlight js-demo"</span>&gt;</span>.vhs-highlight<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="highlight-text"><a href="#highlight-text">Highlight Text</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-highlight-text js-demo">.vhs-highlight-text</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-highlight-text js-demo">.vhs-highlight-text</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-highlight-text js-demo"</span>&gt;</span>.vhs-highlight-text<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-highlight-text js-demo"</span>&gt;</span>.vhs-highlight-text<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="flash"><a href="#flash">Flash</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-flash js-demo">.vhs-flash</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-flash js-demo">.vhs-flash</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flash js-demo"</span>&gt;</span>.vhs-flash<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash js-demo"</span>&gt;</span>.vhs-flash<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-flash vhs-duration-2 js-demo">.vhs-flash .vhs-duration-2</div>
-  <div class="h2 bold vhs-flash vhs-duration-3 js-demo">.vhs-flash .vhs-duration-3</div>
-  <div class="h2 bold vhs-flash vhs-duration-4 js-demo">.vhs-flash .vhs-duration-4</div>
-  <div class="h2 bold vhs-flash vhs-duration-5 js-demo">.vhs-flash .vhs-duration-5</div>
-  <div class="h2 bold vhs-flash vhs-duration-6 js-demo">.vhs-flash vhs-duration-6</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-flash vhs-duration-2 js-demo">.vhs-flash .vhs-duration-2</div>
+  <div class="vhs-flash vhs-duration-3 js-demo">.vhs-flash .vhs-duration-3</div>
+  <div class="vhs-flash vhs-duration-4 js-demo">.vhs-flash .vhs-duration-4</div>
+  <div class="vhs-flash vhs-duration-5 js-demo">.vhs-flash .vhs-duration-5</div>
+  <div class="vhs-flash vhs-duration-6 js-demo">.vhs-flash vhs-duration-6</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flash vhs-duration-2 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flash vhs-duration-3 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flash vhs-duration-4 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flash vhs-duration-5 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flash vhs-duration-6 js-demo"</span>&gt;</span>.vhs-flash vhs-duration-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-2 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-3 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-4 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-5 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-6 js-demo"</span>&gt;</span>.vhs-flash vhs-duration-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="left"><a href="#left">Left</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-left js-demo">.vhs-left</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-left js-demo">.vhs-left</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-left js-demo"</span>&gt;</span>.vhs-left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-left js-demo"</span>&gt;</span>.vhs-left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="left-reverse"><a href="#left-reverse">Left Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-left vhs-reverse js-demo">.vhs-left .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-left vhs-reverse js-demo">.vhs-left .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-left vhs-reverse js-demo"</span>&gt;</span>.vhs-left .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-left vhs-reverse js-demo"</span>&gt;</span>.vhs-left .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="right"><a href="#right">Right</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-right js-demo">.vhs-right</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-right js-demo">.vhs-right</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-right js-demo"</span>&gt;</span>.vhs-right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-right js-demo"</span>&gt;</span>.vhs-right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="right-reverse"><a href="#right-reverse">Right Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-right vhs-reverse js-demo">.vhs-right .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-right vhs-reverse js-demo">.vhs-right .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-right vhs-reverse js-demo"</span>&gt;</span>.vhs-right .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-right vhs-reverse js-demo"</span>&gt;</span>.vhs-right .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="top"><a href="#top">Top</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-top js-demo">.vhs-top</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-top js-demo">.vhs-top</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-top js-demo"</span>&gt;</span>.vhs-top<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-top js-demo"</span>&gt;</span>.vhs-top<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="top-reverse"><a href="#top-reverse">Top Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-top vhs-reverse js-demo">.vhs-top .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-top vhs-reverse js-demo">.vhs-top .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-top vhs-reverse js-demo"</span>&gt;</span>.vhs-top .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-top vhs-reverse js-demo"</span>&gt;</span>.vhs-top .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="bottom"><a href="#bottom">Bottom</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-bottom js-demo">.vhs-bottom</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-bottom js-demo">.vhs-bottom</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-bottom js-demo"</span>&gt;</span>.vhs-bottom<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-bottom js-demo"</span>&gt;</span>.vhs-bottom<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="bottom-reverse"><a href="#bottom-reverse">Bottom Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-bottom vhs-reverse js-demo">.vhs-bottom .vhs-reverse</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-bottom vhs-reverse js-demo">.vhs-bottom .vhs-reverse</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-bottom vhs-reverse js-demo"</span>&gt;</span>.vhs-bottom .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-bottom vhs-reverse js-demo"</span>&gt;</span>.vhs-bottom .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <hr>
-<h2 id="fade-left"><a href="#fade-left">Fade Left</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-fade-left js-demo">.vhs-fade-left</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-fade-left js-demo"</span>&gt;</span>.vhs-fade-left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
 <h2 id="highlight-pop"><a href="#highlight-pop">Highlight Pop</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
-    <div class="center p2">
-  <div class="h2 bold vhs-highlight-pop js-demo">.vhs-highlight-pop</div>
+    <div class="h2 bold center p2">
+  <div class="vhs-highlight-pop js-demo">.vhs-highlight-pop</div>
 </div>
   </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-highlight-pop js-demo"</span>&gt;</span>.vhs-highlight-pop<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-highlight-pop js-demo"</span>&gt;</span>.vhs-highlight-pop<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
 </div>
 <h2 id="utility"><a href="#utility">Utility</a></h2><h3 id="delay"><a href="#delay">Delay</a></h3><table>
@@ -457,13 +449,20 @@
 </tbody>
 </table>
 
+
       </div>
-      <div class="sm-col sm-col-3 px3 py3">
+      <div class="sm-col sm-col-3 px3 py3 vhs-right vhs-delay-4">
         <ul class="list-reset">
           
             <li>
               <a href="#vhs" class="button button-small button-link aqua">
                 VHS
+              </a>
+            </li>
+          
+            <li>
+              <a href="#demos" class="button button-small button-link aqua">
+                Demos
               </a>
             </li>
           
@@ -588,12 +587,6 @@
             </li>
           
             <li>
-              <a href="#fade-left" class="button button-small button-link aqua">
-                Fade Left
-              </a>
-            </li>
-          
-            <li>
               <a href="#highlight-pop" class="button button-small button-link aqua">
                 Highlight Pop
               </a>
@@ -651,13 +644,23 @@
       </div>
     </div>
 
-    <footer class="py2 border-top">
+    <hr class="border-red muted"/>
+
+    <section class="center px3 py4 mb4">
+      <a href="https://github.com/jxnblk/vhs" class="button button-outline ml1 mr1 red">Github</a>
+      <a href="https://github.com/jxnblk/vhs/archive/master.zip" class="button button-outline ml1 mr1 red">Download</a>
+    </section>
+
+    <hr class="mb0 border-red muted"/>
+
+    <footer class="py2 red">
       <div class="flex flex-baseline mxn1">
         <a href="" class="button button-small button-link ml1 mr1">
           vhs
         </a>
         <div class="h5 bold px1">v0.0.1</div>
         <div class="flex-auto"></div>
+        <a href="https://github.com/jxnblk/vhs/archive/master.zip" class="button button-small button-link ml1 mr1">Download</a>
         <a href="https://github.com/jxnblk/vhs" class="button button-small button-link ml1 mr1">Github</a>
         
           <a href="http://npmjs.com/package/vhs" class="button button-small button-link ml1 mr1">NPM</a>

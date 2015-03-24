@@ -50,7 +50,7 @@
   --duration-5: var(--time-5);
   --duration-6: var(--time-6);
 
-  --flicker-duration: var(--duration-4);
+  --flicker-duration: var(--duration-3);
 
   --flash-duration: var(--duration-1);
   --pop-duration: var(--duration-2);
@@ -59,8 +59,8 @@
   --highlight-duration: var(--duration-6);
 
   --translate-duration: var(--duration-4);
-  --translate-x-distance: 30vw;
-  --translate-y-distance: 30vh;
+  --translate-x-distance: 12.5vw;
+  --translate-y-distance: 12.5vh;
 
 }
 
