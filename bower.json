@@ -1,0 +1,16 @@
+{
+  "name": "vhs",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jxnblk/vhs",
+  "authors": [
+    "Brent Jackson <jxnblk@github.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
