@@ -2,13 +2,11 @@
 
 Post-future CSS animations
 
+`npm install vhs`
 
-```bash
-npm install vhs
-```
+Or use the CDN:
 
-
-# Demos
+[`<link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">`](http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css)
 
 ## Flicker
 
