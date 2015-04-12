@@ -11,6 +11,7 @@
 @import './lib/pop';
 @import './lib/highlight';
 @import './lib/translate';
+@import './lib/blur';
 
 @import './lib/highlight-pop';
 
@@ -57,6 +58,7 @@
   --zoom-duration: var(--duration-2);
   --fade-duration: var(--duration-3);
   --highlight-duration: var(--duration-6);
+  --blur-duration: var(--duration-5);
 
   --translate-duration: var(--duration-4);
   --translate-x-distance: 12.5vw;

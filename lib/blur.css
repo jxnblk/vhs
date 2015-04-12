@@ -1,0 +1,11 @@
+
+.vhs-blur  {
+  animation-name: vhs-blur;
+  animation-duration: var(--blur-duration);
+  animation-fill-mode: forwards;
+}
+
+@keyframes vhs-blur {
+  from { filter: blur(32px) }
+  to { filter: blur(0) }
+}

@@ -23,11 +23,9 @@
 
     <header class="py1 xborder-bottom border-red">
       <div class="flex flex-center flex-wrap mxn2">
-        <div class="h3 bold caps flex-auto px2 py1 red vhs-flicker">
-          <h1 id="vhs">VHS</h1>
-
-          <p>Post-future CSS animations</p>
-
+        <div class="flex-auto px2 py1 mt2 red xvhs-flicker">
+          <h1 class="h0 h0-responsive caps m0 vhs-blur">vhs</h1>
+          <p class="h3 bold caps vhs-flicker">Post-future CSS animations</p>
         </div>
         <div class="vhs-right vhs-delay-3">
           
@@ -39,11 +37,11 @@
         </div>
       </div>
       <div class="h6 caps center flex flex-center flex-wrap mt2 red vhs-fade vhs-delay-2">
-        <div class="flex-auto bold p1 vhs-top vhs-delay-2"> 10 KB </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-2"> 11 KB </div>
         <div class="flex-auto bold p1 vhs-top vhs-delay-3"> 1 KB gzipped </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 101 selectors </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 245 declarations </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 22 properties </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 106 selectors </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 263 declarations </div>
+        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 24 properties </div>
       </div>
       <div class="fixed z1 right-0 top-0 m2 vhs-top">
         <button class="button button-small red bg-darken-4 js-replay-button">Replay</button>
@@ -56,9 +54,27 @@
 
     <div class="clearfix mb3 mxn3">
       <div class="prose sm-col sm-col-9 px3 py2 highlight-dark vhs-bottom vhs-delay-1 vhs-duration-3">
-        <p><code>npm install vhs</code></p>
-<p>Or use the CDN:</p>
-<p><a href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css&quot;&gt;</code></a></p>
+        <pre>npm install vhs</pre><p>Or use the <a href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">CDN</a></p>
+<pre>&lt;link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css"&gt;</pre><h2 id="blur"><a href="#blur">Blur</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center p2">
+  <div class="h2 bold vhs-blur js-demo">.vhs-blur</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-blur js-demo"</span>&gt;</span>.vhs-blur<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
+<h2 id="blur-reverse"><a href="#blur-reverse">Blur Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
+  <div class="MarkedExample-rendered p2">
+    <div class="center p2">
+  <div class="h2 bold vhs-blur vhs-reverse js-demo">.vhs-blur</div>
+</div>
+  </div>
+  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-blur vhs-reverse js-demo"</span>&gt;</span>.vhs-blur<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+</div>
 <h2 id="flicker"><a href="#flicker">Flicker</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
   <div class="MarkedExample-rendered p2">
     <div class="center p2">
@@ -459,6 +475,18 @@
             <li>
               <a href="#vhs" class="button button-small button-link aqua">
                 VHS
+              </a>
+            </li>
+          
+            <li>
+              <a href="#blur" class="button button-small button-link aqua">
+                Blur
+              </a>
+            </li>
+          
+            <li>
+              <a href="#blur-reverse" class="button button-small button-link aqua">
+                Blur Reverse
               </a>
             </li>
           

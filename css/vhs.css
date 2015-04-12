@@ -237,6 +237,24 @@
    0% { -webkit-transform: translateY(12.5vh); transform: translateY(12.5vh); opacity: 0; }
  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 }
+.vhs-blur  {
+  -webkit-animation-name: vhs-blur;
+          animation-name: vhs-blur;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vhs-blur {
+  from { filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="32" /></filter></svg>#filter'); -webkit-filter: blur(32px); filter: blur(32px) }
+  to { filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter'); -webkit-filter: blur(0); filter: blur(0) }
+}
+
+@keyframes vhs-blur {
+  from { filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="32" /></filter></svg>#filter'); -webkit-filter: blur(32px); filter: blur(32px) }
+  to { filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter'); -webkit-filter: blur(0); filter: blur(0) }
+}
 
 .vhs-highlight-pop {
   -webkit-transform: scale(0);

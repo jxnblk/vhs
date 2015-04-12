@@ -19,9 +19,9 @@
 
     <header class="py1 xborder-bottom border-red">
       <div class="flex flex-center flex-wrap mxn2">
-        <div class="h3 bold caps flex-auto px2 py1 red vhs-flicker">
-          <%= obj.firstHeading %>
-          <%= obj.firstParagraph %>
+        <div class="flex-auto px2 py1 mt2 red xvhs-flicker">
+          <h1 class="h0 h0-responsive caps m0 vhs-blur"><%= obj.name %></h1>
+          <p class="h3 bold caps vhs-flicker"><%= obj.description %></p>
         </div>
         <div class="vhs-right vhs-delay-3">
           <% if (obj.homepage) { %>

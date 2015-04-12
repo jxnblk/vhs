@@ -2,11 +2,31 @@
 
 Post-future CSS animations
 
-`npm install vhs`
+```
+npm install vhs
+```
 
-Or use the CDN:
+Or use the [CDN](http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css)
 
-[`<link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">`](http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css)
+```
+<link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">
+```
+
+## Blur
+
+```html
+<div class="center p2">
+  <div class="h2 bold vhs-blur js-demo">.vhs-blur</div>
+</div>
+```
+
+## Blur Reverse
+
+```html
+<div class="center p2">
+  <div class="h2 bold vhs-blur vhs-reverse js-demo">.vhs-blur</div>
+</div>
+```
 
 ## Flicker
 
