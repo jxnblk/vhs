@@ -201,9 +201,6 @@ Or use the [CDN](http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css)
 </div>
 ```
 
----
-
-
 ## Highlight Pop
 
 ```html

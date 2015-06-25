@@ -6,21 +6,21 @@
   "scripts": {
     "css": "cssnext index.css css/vhs.css",
     "minify": "cssnext index.css css/vhs.min.css -c",
-    "docs:css": "cssnext docs/index.css docs/base.css",
-    "html": "node docs/build",
     "watch:css": "cssnext index.css css/vhs.css --watch",
     "s3": "npm run minify && node scripts/s3",
-    "serve": "http-server -p 8000",
-    "start": "npm run watch:css & npm run docs:css & npm run html & npm run serve"
+    "docs:dev": "webpack-dev-server --progress --colors",
+    "docs:prod": "webpack -p --progress --colors",
+    "start": "npm run docs:dev"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jxnblk/vhs.git"
   },
   "keywords": [
-    "CSS",
-    "OOCSS",
-    "Basscss"
+    "css",
+    "animations",
+    "oocss",
+    "basscss"
   ],
   "author": "Brent Jackson",
   "license": "MIT",
@@ -29,15 +29,31 @@
   },
   "homepage": "https://github.com/jxnblk/vhs",
   "devDependencies": {
+    "babel-core": "^5.6.5",
+    "babel-loader": "^5.1.4",
+    "basscss-highlight-dark": "0.0.1",
+    "blk": "^3.1.0",
+    "css-loader": "^0.15.1",
     "cssnext": "^1.1.0",
+    "cssnext-loader": "^1.0.1",
     "cssstats": "^1.2.1",
     "doctor-mark": "^1.0.0",
+    "highlight.js": "^8.6.0",
     "http-server": "^0.8.0",
     "humanize-plus": "^1.5.0",
+    "json-loader": "^0.5.2",
+    "lodash": "^3.9.3",
+    "marked": "^0.3.3",
+    "marked-example": "^1.0.4",
     "mocha": "^2.2.1",
+    "node-libs-browser": "^0.5.2",
     "postcss": "^4.0.6",
+    "react": "^0.13.3",
     "s3": "^4.4.0",
-    "watch": "^0.14.0"
+    "static-site-generator-webpack-plugin": "^1.0.0",
+    "watch": "^0.14.0",
+    "webpack": "^1.9.12",
+    "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
     "colors.css": "^2.3.0"
