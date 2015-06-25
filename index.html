@@ -1,310 +1,110 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf8">
-  <title>VHS</title>
-  <meta name="author" content="Brent Jackson">
-  <meta name="description" content="Post-future CSS animations">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="keywords" content="CSS,OOCSS,Basscss">
-  
-  
-    <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/bassdock/1.2.1/bassdock.min.css">
-  
-    <link rel="stylesheet" href="css/vhs.css">
-  
-    <link rel="stylesheet" href="docs/base.css">
-  
-</head>
-<body class="white bg-slate dark" style="background-color:#102630;">
-
-  <div class="container px2 overflow-hidden">
-
-    <header class="py1 xborder-bottom border-red">
-      <div class="flex flex-center flex-wrap mxn2">
-        <div class="flex-auto px2 py1 mt2 red xvhs-flicker">
-          <h1 class="h0 h0-responsive caps m0 vhs-blur">vhs</h1>
-          <p class="h3 bold caps vhs-flicker">Post-future CSS animations</p>
-        </div>
-        <div class="vhs-right vhs-delay-3">
-          
-            <a href="https://github.com/jxnblk/vhs" class="button button-small ml2 mr1 button-link red">Github</a>
-          
-          
-            <a href="http://npmjs.com/package/vhs" class="button button-small ml1 mr2 button-link red">NPM</a>
-          
-        </div>
-      </div>
-      <div class="h6 caps center flex flex-center flex-wrap mt2 red vhs-fade vhs-delay-2">
-        <div class="flex-auto bold p1 vhs-top vhs-delay-2"> 11 KB </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-3"> 1 KB gzipped </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 106 selectors </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 263 declarations </div>
-        <div class="flex-auto bold p1 vhs-top vhs-delay-4"> 24 properties </div>
-      </div>
-      <div class="fixed z1 right-0 top-0 m2 vhs-top">
-        <button class="button button-small red bg-darken-4 js-replay-button">Replay</button>
-        <button class="button button-small red bg-darken-4 js-loop-button">Loop</button>
-        <button class="button button-small red bg-darken-4 js-pause-button">Pause</button>
-      </div>
-    </header>
-
-    <hr class="mt0 border-red muted vhs-bottom vhs-delay-3 vhs-duration-3"/>
-
-    <div class="clearfix mb3 mxn3">
-      <div class="prose sm-col sm-col-9 px3 py2 highlight-dark vhs-bottom vhs-delay-1 vhs-duration-3">
-        <pre>npm install vhs</pre><p>Or use the <a href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">CDN</a></p>
-<pre>&lt;link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css"&gt;</pre><h2 id="blur"><a href="#blur">Blur</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="center p2">
+<!DOCTYPE html><html data-reactid=".221qhr077y8" data-react-checksum="-449722555"><head data-reactid=".221qhr077y8.0"><meta charset="utf-8" data-reactid=".221qhr077y8.0.0"><title data-reactid=".221qhr077y8.0.1">vhs</title><meta name="viewport" content="width=device-width, initial-scale=1" data-reactid=".221qhr077y8.0.2"><style data-reactid=".221qhr077y8.0.3">body{margin:0}img{max-width:100%}svg{max-height:100%}body{font-family:SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif;line-height:1.5;font-size:100%}h1,h2,h3,h4,h5,h6{font-family:SF UI Display,Roboto,Helvetica Neue,Helvetica,sans-serif;font-weight:700;line-height:1.25;margin-top:1em;margin-bottom:.5em}dl,ol,p,ul{font-size:1pc;font-size:1rem;margin-top:0;margin-bottom:1pc;margin-bottom:1rem}code,pre,samp{font-family:Source Code Pro,Consolas,monospace;font-size:87.5%}pre{margin-top:0;margin-bottom:1pc;margin-bottom:1rem;overflow-x:scroll}h1{font-size:2pc;font-size:2rem}h2{font-size:24px;font-size:1.5rem}h3{font-size:20px;font-size:1.25rem}h4{font-size:1pc;font-size:1rem}h5{font-size:14px;font-size:.875rem}h6{font-size:9pt;font-size:.75rem}body{color:#172c36;background-color:#fff}a{color:#007bbd;text-decoration:none}a:hover{text-decoration:underline}code,pre{background-color:transparent;border-radius:3px}hr{border:0;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#000;border-bottom-color:rgba(0,0,0,.125)}.btn{font-family:inherit;font-size:14px;font-size:.875rem;font-weight:700;cursor:pointer;display:inline-block;line-height:18px;line-height:1.125rem;padding:8px 1pc;padding:.5rem 1rem;margin:0;height:auto;border:1px solid transparent;vertical-align:middle;-webkit-appearance:none;color:inherit;background-color:transparent}.btn,.btn:hover{text-decoration:none}.btn:hover{border:1px solid #000;border:1px solid rgba(0,0,0,.0625);box-shadow:inset 0 0 0 20rem #000;box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn:focus{outline:0;border-color:#000;border-color:rgba(0,0,0,.125);box-shadow:0 0 0 3px #000;box-shadow:0 0 0 3px rgba(0,0,0,.25)}.btn.is-active,.btn:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px #000;box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn.is-disabled,.btn:disabled{opacity:.5}.btn-primary{color:#fff;background-color:#007bbd;border-radius:3px}.btn-outline,.btn-outline:hover{border-color:currentcolor;border-radius:3px}::-moz-focus-inner{border:0;padding:0}.h1{font-size:2pc;font-size:2rem}.h2{font-size:24px;font-size:1.5rem}.h3{font-size:20px;font-size:1.25rem}.h4{font-size:1pc;font-size:1rem}.h5{font-size:14px;font-size:.875rem}.h6{font-size:9pt;font-size:.75rem}.bold{font-weight:700}.regular{font-weight:400}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.border-box{box-sizing:border-box}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.m1{margin:8px;margin:.5rem}.mt1{margin-top:8px;margin-top:.5rem}.mr1{margin-right:8px;margin-right:.5rem}.mb1{margin-bottom:8px;margin-bottom:.5rem}.ml1{margin-left:8px;margin-left:.5rem}.m2{margin:1pc;margin:1rem}.mt2{margin-top:1pc;margin-top:1rem}.mr2{margin-right:1pc;margin-right:1rem}.mb2{margin-bottom:1pc;margin-bottom:1rem}.ml2{margin-left:1pc;margin-left:1rem}.m3{margin:2pc;margin:2rem}.mt3{margin-top:2pc;margin-top:2rem}.mr3{margin-right:2pc;margin-right:2rem}.mb3{margin-bottom:2pc;margin-bottom:2rem}.ml3{margin-left:2pc;margin-left:2rem}.m4{margin:4pc;margin:4rem}.mt4{margin-top:4pc;margin-top:4rem}.mr4{margin-right:4pc;margin-right:4rem}.mb4{margin-bottom:4pc;margin-bottom:4rem}.ml4{margin-left:4pc;margin-left:4rem}.mxn1{margin-left:-8px;margin-left:-.5rem;margin-right:-8px;margin-right:-.5rem}.mxn2{margin-left:-1pc;margin-left:-1rem;margin-right:-1pc;margin-right:-1rem}.mxn3{margin-left:-2pc;margin-left:-2rem;margin-right:-2pc;margin-right:-2rem}.mxn4{margin-left:-4pc;margin-left:-4rem;margin-right:-4pc;margin-right:-4rem}.mx-auto{margin-left:auto;margin-right:auto}.p1{padding:8px;padding:.5rem}.py1{padding-top:8px;padding-top:.5rem;padding-bottom:8px;padding-bottom:.5rem}.px1{padding-left:8px;padding-left:.5rem;padding-right:8px;padding-right:.5rem}.p2{padding:1pc;padding:1rem}.py2{padding-top:1pc;padding-top:1rem;padding-bottom:1pc;padding-bottom:1rem}.px2{padding-left:1pc;padding-left:1rem;padding-right:1pc;padding-right:1rem}.p3{padding:2pc;padding:2rem}.py3{padding-top:2pc;padding-top:2rem;padding-bottom:2pc;padding-bottom:2rem}.px3{padding-left:2pc;padding-left:2rem;padding-right:2pc;padding-right:2rem}.p4{padding:4pc;padding:4rem}.py4{padding-top:4pc;padding-top:4rem;padding-bottom:4pc;padding-bottom:4rem}.px4{padding-left:4pc;padding-left:4rem;padding-right:4pc;padding-right:4rem}.container{max-width:64em;margin-left:auto;margin-right:auto}.col{float:left}.col,.col-right{box-sizing:border-box}.col-right{float:right}.col-1{width:8.33333%}.col-2{width:16.66667%}.col-3{width:25%}.col-4{width:33.33333%}.col-5{width:41.66667%}.col-6{width:50%}.col-7{width:58.33333%}.col-8{width:66.66667%}.col-9{width:75%}.col-10{width:83.33333%}.col-11{width:91.66667%}.col-12{width:100%}@media (min-width:40em){.sm-col{float:left;box-sizing:border-box}.sm-col-right{float:right;box-sizing:border-box}.sm-col-1{width:8.33333%}.sm-col-2{width:16.66667%}.sm-col-3{width:25%}.sm-col-4{width:33.33333%}.sm-col-5{width:41.66667%}.sm-col-6{width:50%}.sm-col-7{width:58.33333%}.sm-col-8{width:66.66667%}.sm-col-9{width:75%}.sm-col-10{width:83.33333%}.sm-col-11{width:91.66667%}.sm-col-12{width:100%}}@media (min-width:52em){.md-col{float:left;box-sizing:border-box}.md-col-right{float:right;box-sizing:border-box}.md-col-1{width:8.33333%}.md-col-2{width:16.66667%}.md-col-3{width:25%}.md-col-4{width:33.33333%}.md-col-5{width:41.66667%}.md-col-6{width:50%}.md-col-7{width:58.33333%}.md-col-8{width:66.66667%}.md-col-9{width:75%}.md-col-10{width:83.33333%}.md-col-11{width:91.66667%}.md-col-12{width:100%}}@media (min-width:64em){.lg-col{float:left;box-sizing:border-box}.lg-col-right{float:right;box-sizing:border-box}.lg-col-1{width:8.33333%}.lg-col-2{width:16.66667%}.lg-col-3{width:25%}.lg-col-4{width:33.33333%}.lg-col-5{width:41.66667%}.lg-col-6{width:50%}.lg-col-7{width:58.33333%}.lg-col-8{width:66.66667%}.lg-col-9{width:75%}.lg-col-10{width:83.33333%}.lg-col-11{width:91.66667%}.lg-col-12{width:100%}}.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.flex-column{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.flex-wrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex-baseline{-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}.flex-stretch{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}.flex-start{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.flex-end{-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}.flex-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.flex-first{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}.flex-last{-webkit-box-ordinal-group:1025;-webkit-order:1024;-ms-flex-order:1024;order:1024}.flex-auto{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.flex-grow{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.flex-none{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none}.flex>div{box-sizing:border-box}@media (min-width:40em){.sm-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.sm-flex>div{box-sizing:border-box}}@media (min-width:52em){.md-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.md-flex>div{box-sizing:border-box}}@media (min-width:64em){.lg-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.lg-flex>div{box-sizing:border-box}}.border{border:1px solid #000;border-color:rgba(0,0,0,.125)}.border-top{border-top-style:solid;border-top-width:1px;border-top-color:#000;border-top-color:rgba(0,0,0,.125)}.border-right{border-right-style:solid;border-right-width:1px;border-right-color:#000;border-right-color:rgba(0,0,0,.125)}.border-bottom{border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#000;border-bottom-color:rgba(0,0,0,.125)}.border-left{border-left-style:solid;border-left-width:1px;border-left-color:#000;border-left-color:rgba(0,0,0,.125)}.rounded{border-radius:3px}.circle{border-radius:50%}.rounded-top{border-radius:3px 3px 0 0}.rounded-right{border-radius:0 3px 3px 0}.rounded-bottom{border-radius:0 0 3px 3px}.rounded-left{border-radius:3px 0 0 3px}.not-rounded{border-radius:0}.black{color:#111}.gray{color:#aaa}.silver{color:#ddd}.white{color:#fff}.aqua{color:#7fdbff}.blue{color:#007bbd}.navy{color:#001f3f}.teal{color:#39cccc}.green{color:#00a865}.olive{color:#3d9970}.lime{color:#01ff70}.yellow{color:#ffdc00}.orange{color:#ff851b}.red{color:#ff6200}.fuchsia{color:#f012be}.purple{color:#b10dc9}.maroon{color:#85144b}.color-inherit{color:inherit}.muted{opacity:.5}.bg-black{background-color:#111}.bg-gray{background-color:#aaa}.bg-silver{background-color:#ddd}.bg-white{background-color:#fff}.bg-aqua{background-color:#7fdbff}.bg-blue{background-color:#007bbd}.bg-navy{background-color:#001f3f}.bg-teal{background-color:#39cccc}.bg-green{background-color:#00a865}.bg-olive{background-color:#3d9970}.bg-lime{background-color:#01ff70}.bg-yellow{background-color:#ffdc00}.bg-orange{background-color:#ff851b}.bg-red{background-color:#ff6200}.bg-fuchsia{background-color:#f012be}.bg-purple{background-color:#b10dc9}.bg-maroon{background-color:#85144b}.bg-darken-1{background-color:#000;background-color:rgba(0,0,0,.0625)}.bg-darken-2{background-color:#000;background-color:rgba(0,0,0,.125)}.bg-darken-3{background-color:#000;background-color:rgba(0,0,0,.25)}.bg-darken-4{background-color:#000;background-color:rgba(0,0,0,.5)}.prose{font-family:Georgia,serif;font-size:1pc;font-size:1rem}.prose dl,.prose ol,.prose p,.prose ul{font-size:inherit}.prose p:first-child{font-size:20px;font-size:1.25rem}.prose img{height:auto}.prose figcaption{font-family:SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif;font-size:14px;font-size:.875rem}@media (min-width:40em){.prose,.serif{font-size:1.25rem}.prose p:first-child{font-size:1.5rem}}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit;text-decoration:none}h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{text-decoration:underline}pre{padding:0 24px;padding:0 1.5rem;border-left:4px solid #000;border-left:4px solid rgba(0,0,0,.0625)}.caps{letter-spacing:.1em}.sans{font-family:SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif}.serif{font-family:Georgia,serif}.compact{font-family:SF Compact Text,Roboto,Helvetica Neue,Helvetica,sans-serif}.icon{position:relative;top:.125em}.btn:hover{box-shadow:inset 0 99999px #7fdbff;box-shadow:inset 0 99999px rgba(127,219,255,.0625)}.btn-link:hover{text-decoration:underline;box-shadow:none}.btn-narrow{padding-left:8px;padding-left:.5rem;padding-right:8px;padding-right:.5rem}.slate{color:#172c36}.brightblue{color:#33b8ff}.bg-slate{background-color:#172c36}.bg-brightblue{background-color:#33b8ff}.highlight-dark .hljs{color:#fff;-webkit-text-size-adjust:none}.highlight-dark .diff .hljs-header,.highlight-dark .hljs-comment,.highlight-dark .hljs-javadoc{color:#ddd;font-style:italic}.highlight-dark .css .rule .hljs-keyword,.highlight-dark .hljs-keyword,.highlight-dark .hljs-request,.highlight-dark .hljs-status,.highlight-dark .hljs-subst,.highlight-dark .hljs-winutils,.highlight-dark .nginx .hljs-title{color:#fff;font-weight:700}.highlight-dark .hljs-hexcolor,.highlight-dark .hljs-number,.highlight-dark .ruby .hljs-constant{color:#01ff70}.highlight-dark .hljs-dartdoc,.highlight-dark .hljs-phpdoc,.highlight-dark .hljs-string,.highlight-dark .hljs-tag .hljs-value,.highlight-dark .tex .hljs-formula{color:#ff6200}.hljs-id,.hljs-title,.scss .hljs-preprocessor{color:#ff6200;font-weight:700}.highlight-dark .hljs-list .hljs-keyword,.highlight-dark .hljs-subst{font-weight:400}.highlight-dark .hljs-class .hljs-title,.highlight-dark .hljs-type,.highlight-dark .tex .hljs-command,.highlight-dark .vhdl .hljs-literal{color:#7fdbff;font-weight:700}.highlight-dark .django .hljs-tag .hljs-keyword,.highlight-dark .hljs-rules .hljs-property,.highlight-dark .hljs-tag,.highlight-dark .hljs-tag .hljs-title{color:#7fdbff;font-weight:400}.highlight-dark .hljs-attribute,.highlight-dark .hljs-regexp,.highlight-dark .hljs-variable,.highlight-dark .lisp .hljs-body{color:#01ff70}.highlight-dark .clojure .hljs-keyword,.highlight-dark .hljs-prompt,.highlight-dark .hljs-symbol,.highlight-dark .lisp .hljs-keyword,.highlight-dark .ruby .hljs-symbol .hljs-string,.highlight-dark .scheme .hljs-keyword,.highlight-dark .tex .hljs-special{color:#f012be}.highlight-dark .hljs-built_in{color:#7fdbff}.highlight-dark .hljs-cdata,.highlight-dark .hljs-doctype,.highlight-dark .hljs-pi,.highlight-dark .hljs-pragma,.highlight-dark .hljs-preprocessor,.highlight-dark .hljs-shebang{color:#ddd;font-weight:700}.highlight-dark .hljs-deletion{background:#f012be}.highlight-dark .hljs-addition{background:#01ff70}.highlight-dark .diff .hljs-change{background:#7fdbff}.highlight-dark .hljs-chunk{color:#aaa}.vhs-flash{-webkit-animation-name:a;animation-name:a;-webkit-animation-duration:.1s;animation-duration:.1s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:steps(1);animation-timing-function:steps(1);opacity:0}@-webkit-keyframes a{0%{opacity:0}50%{opacity:1}}@keyframes a{0%{opacity:0}50%{opacity:1}}.vhs-flicker{opacity:0;-webkit-animation-name:b;animation-name:b;-webkit-animation-duration:.4s;animation-duration:.4s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:steps(7);animation-timing-function:steps(7)}@-webkit-keyframes b{0%{opacity:0}12.5%{opacity:.25}25%,37.5%{opacity:0}50%{opacity:.75}62.5%{opacity:0}75%{opacity:1}87.5%{opacity:.5}to{opacity:1}}@keyframes b{0%{opacity:0}12.5%{opacity:.25}25%,37.5%{opacity:0}50%{opacity:.75}62.5%{opacity:0}75%{opacity:1}87.5%{opacity:.5}to{opacity:1}}.vhs-zoom{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-animation-name:c;animation-name:c;-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes c{0%{-webkit-transform:scale(0);transform:scale(0)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes c{0%{-webkit-transform:scale(0);transform:scale(0)}to{-webkit-transform:scale(1);transform:scale(1)}}.vhs-fade{opacity:0;-webkit-animation-name:d;animation-name:d;-webkit-animation-duration:.4s;animation-duration:.4s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes d{0%{opacity:0}to{opacity:1}}@keyframes d{0%{opacity:0}to{opacity:1}}.vhs-pop{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-animation-name:e;animation-name:e;-webkit-animation-duration:.2s;animation-duration:.2s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes e{0%{-webkit-transform:scale(0);transform:scale(0)}75%{-webkit-transform:scale(1.25);transform:scale(1.25)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes e{0%{-webkit-transform:scale(0);transform:scale(0)}75%{-webkit-transform:scale(1.25);transform:scale(1.25)}to{-webkit-transform:scale(1);transform:scale(1)}}.vhs-highlight{-webkit-animation-name:f;animation-name:f;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.vhs-highlight,.vhs-highlight-text{-webkit-animation-duration:2s;animation-duration:2s}.vhs-highlight-text{-webkit-animation-name:g;animation-name:g}@-webkit-keyframes f{0%{background-color:#0ff;background-color:rgba(0,255,255,.5);background-color:#7fdbff;background-color:rgba(127,219,255,.5)}to{background-color:rgba(0,255,255,0);background-color:rgba(127,219,255,0)}}@keyframes f{0%{background-color:#0ff;background-color:rgba(0,255,255,.5);background-color:#7fdbff;background-color:rgba(127,219,255,.5)}to{background-color:rgba(0,255,255,0);background-color:rgba(127,219,255,0)}}@-webkit-keyframes g{0%{color:blue;color:#007bbd}to{color:inherit}}@keyframes g{0%{color:blue;color:#007bbd}to{color:inherit}}.vhs-bottom,.vhs-left,.vhs-right,.vhs-top{opacity:0;-webkit-animation-duration:.6s;animation-duration:.6s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.vhs-left{-webkit-animation-name:h;animation-name:h;-webkit-transform:translateX(-12.5vw);-ms-transform:translateX(-12.5vw);transform:translateX(-12.5vw)}.vhs-right{-webkit-animation-name:i;animation-name:i;-webkit-transform:translateX(12.5vw);-ms-transform:translateX(12.5vw);transform:translateX(12.5vw)}.vhs-top{-webkit-animation-name:j;animation-name:j;-webkit-transform:translateY(-12.5vh);-ms-transform:translateY(-12.5vh);transform:translateY(-12.5vh)}.vhs-bottom{-webkit-animation-name:k;animation-name:k;-webkit-transform:translateY(12.5vh);-ms-transform:translateY(12.5vh);transform:translateY(12.5vh)}@-webkit-keyframes h{0%{-webkit-transform:translateX(-12.5vw);transform:translateX(-12.5vw);opacity:0}to{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes h{0%{-webkit-transform:translateX(-12.5vw);transform:translateX(-12.5vw);opacity:0}to{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@-webkit-keyframes i{0%{-webkit-transform:translateX(12.5vw);transform:translateX(12.5vw);opacity:0}to{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes i{0%{-webkit-transform:translateX(12.5vw);transform:translateX(12.5vw);opacity:0}to{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@-webkit-keyframes j{0%{-webkit-transform:translateY(-12.5vh);transform:translateY(-12.5vh);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes j{0%{-webkit-transform:translateY(-12.5vh);transform:translateY(-12.5vh);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@-webkit-keyframes k{0%{-webkit-transform:translateY(12.5vh);transform:translateY(12.5vh);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes k{0%{-webkit-transform:translateY(12.5vh);transform:translateY(12.5vh);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}.vhs-blur{-webkit-animation-name:l;animation-name:l;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes l{0%{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="32" /></filter></svg>#filter');-webkit-filter:blur(32px);filter:blur(32px)}to{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter');-webkit-filter:blur(0);filter:blur(0)}}@keyframes l{0%{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="32" /></filter></svg>#filter');-webkit-filter:blur(32px);filter:blur(32px)}to{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter');-webkit-filter:blur(0);filter:blur(0)}}.vhs-highlight-pop{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-animation-name:vhs-pop,vhs-highlight;animation-name:vhs-pop,vhs-highlight;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.vhs-highlight-pop,.vhs-highlight-pop-text{-webkit-animation-duration:.2s,2s;animation-duration:.2s,2s}.vhs-highlight-pop-text{-webkit-animation-name:vhs-pop,vhs-highlight-text;animation-name:vhs-pop,vhs-highlight-text}.vhs-delay-1{-webkit-animation-delay:.1s;animation-delay:.1s}.vhs-delay-2{-webkit-animation-delay:.2s;animation-delay:.2s}.vhs-delay-3{-webkit-animation-delay:.4s;animation-delay:.4s}.vhs-delay-4{-webkit-animation-delay:.6s;animation-delay:.6s}.vhs-delay-5{-webkit-animation-delay:1s;animation-delay:1s}.vhs-delay-6{-webkit-animation-delay:2s;animation-delay:2s}.vhs-duration-1{-webkit-animation-duration:.1s;animation-duration:.1s}.vhs-duration-2{-webkit-animation-duration:.2s;animation-duration:.2s}.vhs-duration-3{-webkit-animation-duration:.4s;animation-duration:.4s}.vhs-duration-4{-webkit-animation-duration:.6s;animation-duration:.6s}.vhs-duration-5{-webkit-animation-duration:1s;animation-duration:1s}.vhs-duration-6{-webkit-animation-duration:2s;animation-duration:2s}.vhs-linear{-webkit-animation-timing-function:linear;animation-timing-function:linear}.vhs-ease-in{-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}.vhs-ease-out{-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}.vhs-ease-in-out{-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}.vhs-infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.vhs-reverse{-webkit-animation-direction:reverse;animation-direction:reverse}.vhs-alternate{-webkit-animation-direction:alternate;animation-direction:alternate}.vhs-fill-forwards{-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.vhs-fill-backwards{-webkit-animation-fill-mode:backwards;animation-fill-mode:backwards}.vhs-fill-both{-webkit-animation-fill-mode:both;animation-fill-mode:both}.vhs-paused{-webkit-animation-play-state:paused;animation-play-state:paused}a{color:inherit}.no-border{border:0}.Readme table{font-family:SF UI Text,Roboto,Helvetica Neue,Helvetica,sans-serif;font-size:1pc;font-size:1rem;width:100%;margin-bottom:1pc;margin-bottom:1rem;border-collapse:separate;border-spacing:0}.Readme th{text-align:left;vertical-align:bottom;padding:8px 0;padding:.5rem 0;border-bottom:2px solid #000;border-bottom:2px solid rgba(0,0,0,.125)}.Readme th:first-child{width:25%}.Readme td{vertical-align:top;padding:8px 0;padding:.5rem 0;border-bottom:1px solid #000;border-bottom:1px solid rgba(0,0,0,.0625)}.Readme h1:first-of-type,.Readme p:first-of-type{display:none}</style></head><body class="container px3 white bg-blue" data-reactid=".221qhr077y8.1"><div class="vhs-blur" data-reactid=".221qhr077y8.1.0"><header class="py3 sm-flex flex-wrap flex-center" data-reactid=".221qhr077y8.1.0.0"><div class="flex-auto mxn1" data-reactid=".221qhr077y8.1.0.0.0"><div class="" data-reactid=".221qhr077y8.1.0.0.0.0"><a href="http://jxnblk.com" class="h5 bold caps compact px1 color-inherit" data-reactid=".221qhr077y8.1.0.0.0.0.0">Jxnblk</a></div><h1 class="m0" data-reactid=".221qhr077y8.1.0.0.0.1"><a href="/vhs" class="inline-block px1" data-reactid=".221qhr077y8.1.0.0.0.1.0">vhs</a></h1><p class="h3 m0 px1" data-reactid=".221qhr077y8.1.0.0.0.2">Post-future CSS animations</p></div><div class="mxn1" data-reactid=".221qhr077y8.1.0.0.1"><a href="//github.com/jxnblk/vhs/archive/master.zip" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.0.0.1.$0">Download</a><a href="//github.com/jxnblk/vhs" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.0.0.1.$1">GitHub</a><a href="//npmjs.com/package/vhs" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.0.0.1.$2">npm</a></div></header></div><hr data-reactid=".221qhr077y8.1.1"><div class="py3 vhs-right vhs-delay-4" data-reactid=".221qhr077y8.1.2"><div class="inline-block" data-reactid=".221qhr077y8.1.2.0"><iframe src="https://ghbtns.com/github-btn.html?user=jxnblk&amp;repo=vhs&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px" data-reactid=".221qhr077y8.1.2.0.0"></iframe></div><div class="inline-block" data-reactid=".221qhr077y8.1.2.1"><a href="https://twitter.com/share" class="twitter-share-button" data-text="VHS: Post-future CSS animations" data-via="jxnblk" data-size="large" data-reactid=".221qhr077y8.1.2.1.0">Tweet</a><script data-reactid=".221qhr077y8.1.2.1.1">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "twitter-wjs");</script></div></div><div class="vhs-bottom vhs-delay-3" data-reactid=".221qhr077y8.1.3"><div class="Readme py4 white" data-reactid=".221qhr077y8.1.3.0"><h1 id="vhs"><a href="#vhs">VHS</a></h1><p>Post-future CSS animations</p>
+<pre>npm install vhs</pre><p>Or use the <a href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css">CDN</a></p>
+<pre>&lt;link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/vhs/0.1.0/vhs.min.css"&gt;</pre><h2 id="blur"><a href="#blur">Blur</a></h2><div class="border rounded"><div class="border-bottom"><div class="center p2">
   <div class="h2 bold vhs-blur js-demo">.vhs-blur</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-blur js-demo"</span>&gt;</span>.vhs-blur<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="blur-reverse"><a href="#blur-reverse">Blur Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="blur-reverse"><a href="#blur-reverse">Blur Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="center p2">
   <div class="h2 bold vhs-blur vhs-reverse js-demo">.vhs-blur</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-blur vhs-reverse js-demo"</span>&gt;</span>.vhs-blur<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="flicker"><a href="#flicker">Flicker</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="flicker"><a href="#flicker">Flicker</a></h2><div class="border rounded"><div class="border-bottom"><div class="center p2">
   <div class="h2 bold vhs-flicker js-demo">.vhs-flicker</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold vhs-flicker js-demo"</span>&gt;</span>.vhs-flicker<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="flicker-reverse"><a href="#flicker-reverse">Flicker Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="flicker-reverse"><a href="#flicker-reverse">Flicker Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-flicker vhs-reverse js-demo">.vhs-flicker.vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flicker vhs-reverse js-demo"</span>&gt;</span>.vhs-flicker.vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="zoom"><a href="#zoom">Zoom</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="zoom"><a href="#zoom">Zoom</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-zoom js-demo">.vhs-zoom</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-zoom js-demo"</span>&gt;</span>.vhs-zoom<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="zoom-reverse"><a href="#zoom-reverse">Zoom Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="zoom-reverse"><a href="#zoom-reverse">Zoom Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-zoom vhs-reverse js-demo">.vhs-zoom .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-zoom vhs-reverse js-demo"</span>&gt;</span>.vhs-zoom .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="fade"><a href="#fade">Fade</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="fade"><a href="#fade">Fade</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-fade js-demo">.vhs-fade</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-fade js-demo"</span>&gt;</span>.vhs-fade<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="fade-reverse"><a href="#fade-reverse">Fade Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="fade-reverse"><a href="#fade-reverse">Fade Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-fade vhs-reverse js-demo">.vhs-fade .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-fade vhs-reverse js-demo"</span>&gt;</span>.vhs-fade .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h3 id="pulsate-effect"><a href="#pulsate-effect">Pulsate Effect</a></h3><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h3 id="pulsate-effect"><a href="#pulsate-effect">Pulsate Effect</a></h3><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo">.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-fade vhs-duration-6 vhs-infinite vhs-alternate js-demo"</span>&gt;</span>.vhs-fade .vhs-duration-6 .vhs-infinite .vhs-alternate<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="pop"><a href="#pop">Pop</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="pop"><a href="#pop">Pop</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-pop js-demo">.vhs-pop</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-pop js-demo"</span>&gt;</span>.vhs-pop<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="pop-reverse"><a href="#pop-reverse">Pop Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="pop-reverse"><a href="#pop-reverse">Pop Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-pop vhs-reverse js-demo">.vhs-pop .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-pop vhs-reverse js-demo"</span>&gt;</span>.vhs-pop .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="highlight"><a href="#highlight">Highlight</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="highlight"><a href="#highlight">Highlight</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-highlight js-demo">.vhs-highlight</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-highlight js-demo"</span>&gt;</span>.vhs-highlight<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="highlight-text"><a href="#highlight-text">Highlight Text</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="highlight-text"><a href="#highlight-text">Highlight Text</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-highlight-text js-demo">.vhs-highlight-text</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-highlight-text js-demo"</span>&gt;</span>.vhs-highlight-text<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="flash"><a href="#flash">Flash</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="flash"><a href="#flash">Flash</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-flash js-demo">.vhs-flash</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash js-demo"</span>&gt;</span>.vhs-flash<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-flash vhs-duration-2 js-demo">.vhs-flash .vhs-duration-2</div>
   <div class="vhs-flash vhs-duration-3 js-demo">.vhs-flash .vhs-duration-3</div>
   <div class="vhs-flash vhs-duration-4 js-demo">.vhs-flash .vhs-duration-4</div>
   <div class="vhs-flash vhs-duration-5 js-demo">.vhs-flash .vhs-duration-5</div>
   <div class="vhs-flash vhs-duration-6 js-demo">.vhs-flash vhs-duration-6</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-2 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-3 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-3<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-4 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-4<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-5 js-demo"</span>&gt;</span>.vhs-flash .vhs-duration-5<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-flash vhs-duration-6 js-demo"</span>&gt;</span>.vhs-flash vhs-duration-6<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="left"><a href="#left">Left</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="left"><a href="#left">Left</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-left js-demo">.vhs-left</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-left js-demo"</span>&gt;</span>.vhs-left<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="left-reverse"><a href="#left-reverse">Left Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="left-reverse"><a href="#left-reverse">Left Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-left vhs-reverse js-demo">.vhs-left .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-left vhs-reverse js-demo"</span>&gt;</span>.vhs-left .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="right"><a href="#right">Right</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="right"><a href="#right">Right</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-right js-demo">.vhs-right</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-right js-demo"</span>&gt;</span>.vhs-right<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="right-reverse"><a href="#right-reverse">Right Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="right-reverse"><a href="#right-reverse">Right Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-right vhs-reverse js-demo">.vhs-right .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-right vhs-reverse js-demo"</span>&gt;</span>.vhs-right .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="top"><a href="#top">Top</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="top"><a href="#top">Top</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-top js-demo">.vhs-top</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-top js-demo"</span>&gt;</span>.vhs-top<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="top-reverse"><a href="#top-reverse">Top Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="top-reverse"><a href="#top-reverse">Top Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-top vhs-reverse js-demo">.vhs-top .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-top vhs-reverse js-demo"</span>&gt;</span>.vhs-top .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="bottom"><a href="#bottom">Bottom</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="bottom"><a href="#bottom">Bottom</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-bottom js-demo">.vhs-bottom</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-bottom js-demo"</span>&gt;</span>.vhs-bottom<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="bottom-reverse"><a href="#bottom-reverse">Bottom Reverse</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="bottom-reverse"><a href="#bottom-reverse">Bottom Reverse</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-bottom vhs-reverse js-demo">.vhs-bottom .vhs-reverse</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-bottom vhs-reverse js-demo"</span>&gt;</span>.vhs-bottom .vhs-reverse<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<hr>
-<h2 id="highlight-pop"><a href="#highlight-pop">Highlight Pop</a></h2><div class="MarkedExample mb2 bg-darken-1 rounded">
-  <div class="MarkedExample-rendered p2">
-    <div class="h2 bold center p2">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="highlight-pop"><a href="#highlight-pop">Highlight Pop</a></h2><div class="border rounded"><div class="border-bottom"><div class="h2 bold center p2">
   <div class="vhs-highlight-pop js-demo">.vhs-highlight-pop</div>
-</div>
-  </div>
-  <pre class="MarkedExample-code m0 p2 bg-darken-1 rounded-bottom"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
+</div><div class="right-align"><button class="js-replay-button h6 caps compact btn">Replay</button></div></div><pre class="m0 p2 no-border"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"h2 bold center p2"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"vhs-highlight-pop js-demo"</span>&gt;</span>.vhs-highlight-pop<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-</div>
-<h2 id="utility"><a href="#utility">Utility</a></h2><h3 id="delay"><a href="#delay">Delay</a></h3><table>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre></div><h2 id="utility"><a href="#utility">Utility</a></h2><h3 id="delay"><a href="#delay">Delay</a></h3><table>
 <thead>
 <tr>
 <th>class</th>
@@ -466,236 +266,4 @@
 </tr>
 </tbody>
 </table>
-
-
-      </div>
-      <div class="sm-col sm-col-3 px3 py3 vhs-right vhs-delay-4">
-        <ul class="list-reset">
-          
-            <li>
-              <a href="#vhs" class="button button-small button-link aqua">
-                VHS
-              </a>
-            </li>
-          
-            <li>
-              <a href="#blur" class="button button-small button-link aqua">
-                Blur
-              </a>
-            </li>
-          
-            <li>
-              <a href="#blur-reverse" class="button button-small button-link aqua">
-                Blur Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#flicker" class="button button-small button-link aqua">
-                Flicker
-              </a>
-            </li>
-          
-            <li>
-              <a href="#flicker-reverse" class="button button-small button-link aqua">
-                Flicker Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#zoom" class="button button-small button-link aqua">
-                Zoom
-              </a>
-            </li>
-          
-            <li>
-              <a href="#zoom-reverse" class="button button-small button-link aqua">
-                Zoom Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#fade" class="button button-small button-link aqua">
-                Fade
-              </a>
-            </li>
-          
-            <li>
-              <a href="#fade-reverse" class="button button-small button-link aqua">
-                Fade Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#pulsate-effect" class="button button-small button-link aqua">
-                Pulsate Effect
-              </a>
-            </li>
-          
-            <li>
-              <a href="#pop" class="button button-small button-link aqua">
-                Pop
-              </a>
-            </li>
-          
-            <li>
-              <a href="#pop-reverse" class="button button-small button-link aqua">
-                Pop Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#highlight" class="button button-small button-link aqua">
-                Highlight
-              </a>
-            </li>
-          
-            <li>
-              <a href="#highlight-text" class="button button-small button-link aqua">
-                Highlight Text
-              </a>
-            </li>
-          
-            <li>
-              <a href="#flash" class="button button-small button-link aqua">
-                Flash
-              </a>
-            </li>
-          
-            <li>
-              <a href="#left" class="button button-small button-link aqua">
-                Left
-              </a>
-            </li>
-          
-            <li>
-              <a href="#left-reverse" class="button button-small button-link aqua">
-                Left Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#right" class="button button-small button-link aqua">
-                Right
-              </a>
-            </li>
-          
-            <li>
-              <a href="#right-reverse" class="button button-small button-link aqua">
-                Right Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#top" class="button button-small button-link aqua">
-                Top
-              </a>
-            </li>
-          
-            <li>
-              <a href="#top-reverse" class="button button-small button-link aqua">
-                Top Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#bottom" class="button button-small button-link aqua">
-                Bottom
-              </a>
-            </li>
-          
-            <li>
-              <a href="#bottom-reverse" class="button button-small button-link aqua">
-                Bottom Reverse
-              </a>
-            </li>
-          
-            <li>
-              <a href="#highlight-pop" class="button button-small button-link aqua">
-                Highlight Pop
-              </a>
-            </li>
-          
-            <li>
-              <a href="#utility" class="button button-small button-link aqua">
-                Utility
-              </a>
-            </li>
-          
-            <li>
-              <a href="#delay" class="button button-small button-link aqua">
-                Delay
-              </a>
-            </li>
-          
-            <li>
-              <a href="#duration" class="button button-small button-link aqua">
-                Duration
-              </a>
-            </li>
-          
-            <li>
-              <a href="#timing-function" class="button button-small button-link aqua">
-                Timing Function
-              </a>
-            </li>
-          
-            <li>
-              <a href="#iteration-count" class="button button-small button-link aqua">
-                Iteration Count
-              </a>
-            </li>
-          
-            <li>
-              <a href="#direction" class="button button-small button-link aqua">
-                Direction
-              </a>
-            </li>
-          
-            <li>
-              <a href="#fill-mode" class="button button-small button-link aqua">
-                Fill Mode
-              </a>
-            </li>
-          
-            <li>
-              <a href="#play-state" class="button button-small button-link aqua">
-                Play State
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
-
-    <hr class="border-red muted"/>
-
-    <section class="center px3 py4 mb4">
-      <a href="https://github.com/jxnblk/vhs" class="button button-outline ml1 mr1 red">Github</a>
-      <a href="https://github.com/jxnblk/vhs/archive/master.zip" class="button button-outline ml1 mr1 red">Download</a>
-    </section>
-
-    <hr class="mb0 border-red muted"/>
-
-    <footer class="py2 red">
-      <div class="flex flex-baseline mxn1">
-        <a href="" class="button button-small button-link ml1 mr1">
-          vhs
-        </a>
-        <div class="h5 bold px1">v0.1.0</div>
-        <div class="flex-auto"></div>
-        <a href="https://github.com/jxnblk/vhs/archive/master.zip" class="button button-small button-link ml1 mr1">Download</a>
-        <a href="https://github.com/jxnblk/vhs" class="button button-small button-link ml1 mr1">Github</a>
-        
-          <a href="http://npmjs.com/package/vhs" class="button button-small button-link ml1 mr1">NPM</a>
-        
-      </div>
-    </footer>
-
-  </div>
-
-  
-    <script src="docs/demo.js"></script>
-  
-</body>
-</html>
+</div><footer class="mt3 py3 border-top" data-reactid=".221qhr077y8.1.3.1"><div class="sm-flex flex-baseline flex-wrap mxn1" data-reactid=".221qhr077y8.1.3.1.0"><a href="/vhs" class="h3 btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.3.1.0.0">vhs</a><div class="sm-flex flex-baseline" data-reactid=".221qhr077y8.1.3.1.0.1"><a href="//github.com/jxnblk/vhs/archive/master.zip" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.3.1.0.1.$0">Download</a><a href="//github.com/jxnblk/vhs" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.3.1.0.1.$1">GitHub</a><a href="//npmjs.com/package/vhs" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.3.1.0.1.$2">npm</a></div><div class="flex-auto" data-reactid=".221qhr077y8.1.3.1.0.2"></div><a href="//jxnblk.com" class="btn btn-narrow btn-link" data-reactid=".221qhr077y8.1.3.1.0.3">Made by Jxnblk</a></div></footer></div><script src="docs/demo.js" data-reactid=".221qhr077y8.1.4"></script><script data-reactid=".221qhr077y8.1.5">(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-4603832-6", "auto");ga("send", "pageview");</script></body></html>
