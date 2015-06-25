@@ -221,7 +221,7 @@ class | description
 .vhs-delay-3 | animation-delay: 3
 .vhs-delay-4 | animation-delay: 4
 .vhs-delay-5 | animation-delay: 5
-.vhs-delay-5 | animation-delay: 6
+.vhs-delay-6 | animation-delay: 6
 
 ### Duration
 

@@ -26,20 +26,18 @@ class Root extends React.Component {
           <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
         <body className='container px3 white bg-blue'>
-          <Header {...this.props} />
+          <div className='vhs-blur'>
+            <Header {...this.props} />
+          </div>
           <hr />
-          <div className='py3'>
+          <div className='py3 vhs-right vhs-delay-4'>
             <GithubButton user='jxnblk' repo='vhs' />
             <TweetButton text='VHS: Post-future CSS animations' />
           </div>
-          <Readme {...this.props} />
-          <Footer {...this.props} />
-          {/*
-          <script id='initial-props'
-            type='application/json'
-            dangerouslySetInnerHTML={initialProps} />
-          <script src='bundle.js' />
-          */}
+          <div className='vhs-bottom vhs-delay-3'>
+            <Readme {...this.props} />
+            <Footer {...this.props} />
+          </div>
           <script src='docs/demo.js' />
           <script dangerouslySetInnerHTML={{ __html: ga }} />
         </body>
