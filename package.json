@@ -2,7 +2,7 @@
   "name": "vhs",
   "version": "0.2.0",
   "description": "Post-future CSS animations",
-  "style": "index.css",
+  "style": "css/vhs.css",
   "scripts": {
     "css": "cssnext index.css css/vhs.css",
     "minify": "cssnext index.css css/vhs.min.css -c",
